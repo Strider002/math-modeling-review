@@ -1,0 +1,15 @@
+* text=auto eol=lf
+# Keep reviewed Skill bytes identical to publication.json on every OS.
+SKILL.md -text
+AGENTS.md -text
+LICENSE -text
+LICENSE-DOCS -text
+LICENSES.md -text
+routing-manifest.yaml -text
+agents/** -text
+assets/** -text
+references/** -text
+scripts/** -text
+*.zip binary
+*.png binary
+*.pdf binary

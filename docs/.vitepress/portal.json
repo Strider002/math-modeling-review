@@ -1,0 +1,141 @@
+{
+  "version": "1.0.0",
+  "owner": "Strider002",
+  "origin": "https://strider002.github.io",
+  "brand": "Math Modeling Skills",
+  "sites": [
+    {
+      "id": "math-modeling-library",
+      "label": "建模方法库",
+      "short": "建模",
+      "description": "从问题拆解、选模到验证与交付",
+      "repository": "math-modeling-library-skill"
+    },
+    {
+      "id": "math-modeling-review",
+      "label": "审查与论文图表",
+      "short": "审查",
+      "description": "检查证据，并规划论文中的图与表",
+      "repository": "math-modeling-review"
+    }
+  ],
+  "nav": [
+    {
+      "text": "建模方法库",
+      "site": "math-modeling-library",
+      "path": "/"
+    },
+    {
+      "text": "审查与图表",
+      "site": "math-modeling-review",
+      "path": "/"
+    },
+    {
+      "text": "模型 → 图表",
+      "site": "math-modeling-review",
+      "path": "/figures.html"
+    },
+    {
+      "text": "下载与使用",
+      "items": [
+        {
+          "text": "下载建模 Skill",
+          "site": "math-modeling-library",
+          "path": "/download.html"
+        },
+        {
+          "text": "下载审查 Skill",
+          "site": "math-modeling-review",
+          "path": "/download.html"
+        }
+      ]
+    }
+  ],
+  "sidebar": [
+    {
+      "text": "建模方法库",
+      "items": [
+        {
+          "text": "概览与开始",
+          "site": "math-modeling-library",
+          "path": "/"
+        },
+        {
+          "text": "问题、数据与选模",
+          "site": "math-modeling-library",
+          "path": "/catalog.html#foundation"
+        },
+        {
+          "text": "进阶模型与方法卡",
+          "site": "math-modeling-library",
+          "path": "/catalog.html#advanced"
+        },
+        {
+          "text": "验证、交付与案例",
+          "site": "math-modeling-library",
+          "path": "/catalog.html#delivery"
+        },
+        {
+          "text": "全部资源目录",
+          "site": "math-modeling-library",
+          "path": "/catalog.html"
+        }
+      ]
+    },
+    {
+      "text": "审查与论文图表",
+      "items": [
+        {
+          "text": "概览与开始",
+          "site": "math-modeling-review",
+          "path": "/"
+        },
+        {
+          "text": "科学审查与验证",
+          "site": "math-modeling-review",
+          "path": "/catalog.html#audit"
+        },
+        {
+          "text": "模型 → 图表速查",
+          "site": "math-modeling-review",
+          "path": "/figures.html"
+        },
+        {
+          "text": "论文表达与交付",
+          "site": "math-modeling-review",
+          "path": "/catalog.html#delivery"
+        },
+        {
+          "text": "全部资源目录",
+          "site": "math-modeling-review",
+          "path": "/catalog.html"
+        }
+      ]
+    },
+    {
+      "text": "下载与项目",
+      "items": [
+        {
+          "text": "建模 Skill 下载",
+          "site": "math-modeling-library",
+          "path": "/download.html"
+        },
+        {
+          "text": "审查 Skill 下载",
+          "site": "math-modeling-review",
+          "path": "/download.html"
+        },
+        {
+          "text": "公开范围与许可证",
+          "site": "math-modeling-library",
+          "path": "/about.html"
+        },
+        {
+          "text": "使用方式与常见问题",
+          "site": "math-modeling-library",
+          "path": "/guide.html"
+        }
+      ]
+    }
+  ]
+}

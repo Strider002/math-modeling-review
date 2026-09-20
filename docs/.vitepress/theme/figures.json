@@ -1,0 +1,106 @@
+[
+  {
+    "model": "线性回归、GLM、正则化回归",
+    "figure": "训练外预测对照或效应区间图，依任务二选一或组合",
+    "table": "基线对比、参数/效应与区间、样本与划分",
+    "group": "回归与统计推断",
+    "condition": "回归与统计推断：推断与预测不能混为一谈",
+    "link": "/content/p-89fc1304ecbd83c1.html"
+  },
+  {
+    "model": "组间比较、实验、因果分析",
+    "figure": "组别分布/效应区间、识别设计或诊断图",
+    "table": "样本结构、效应量、区间、识别假设",
+    "group": "回归与统计推断",
+    "condition": "回归与统计推断：统计显著不等于实际重要",
+    "link": "/content/p-89fc1304ecbd83c1.html"
+  },
+  {
+    "model": "分类、树、集成、神经网络",
+    "figure": "混淆矩阵、适用的 PR/ROC；需要概率决策时追加校准",
+    "table": "分类别指标、样本支持数、阈值与基线",
+    "group": "分类与机器学习",
+    "condition": "分类与机器学习",
+    "link": "/content/p-b48214c3ce57c276.html"
+  },
+  {
+    "model": "时间序列预测",
+    "figure": "标出预测起点的观测—预测图、分步长误差",
+    "table": "同一时间验证下的基线比较",
+    "group": "时间序列与概率预测",
+    "condition": "时间序列与概率预测",
+    "link": "/content/p-fc835dda633b2d8f.html"
+  },
+  {
+    "model": "概率预测、贝叶斯模型",
+    "figure": "预测区间与覆盖、后验预测；按问题选择",
+    "table": "区间水平/覆盖/宽度、评分规则、诊断",
+    "group": "时间序列与概率预测",
+    "condition": "时间序列与概率预测",
+    "link": "/content/p-fc835dda633b2d8f.html"
+  },
+  {
+    "model": "PCA、因子与降维",
+    "figure": "碎石/累积方差、明确含义的载荷或得分图",
+    "table": "保留维数、标准化、解释率、下游验证",
+    "group": "降维与聚类",
+    "condition": "降维与聚类",
+    "link": "/content/p-6aa441f383a3821f.html"
+  },
+  {
+    "model": "聚类、分群",
+    "figure": "原始特征剖面、簇规模、质量/稳定性诊断",
+    "table": "各簇规模、特征摘要、噪声、选择依据",
+    "group": "降维与聚类",
+    "condition": "降维与聚类",
+    "link": "/content/p-6aa441f383a3821f.html"
+  },
+  {
+    "model": "AHP、熵权、TOPSIS 等评价",
+    "figure": "指标/权重展示、排名变化或敏感性",
+    "table": "指标方向、权重依据、分值与排名",
+    "group": "综合评价与优化",
+    "condition": "综合评价与优化",
+    "link": "/content/p-31cd05cb3193011d.html"
+  },
+  {
+    "model": "单目标、整数或启发式优化",
+    "figure": "解结构图、目标与基线比较；必要时收敛",
+    "table": "决策变量、可行性、目标值、界/gap、预算",
+    "group": "综合评价与优化",
+    "condition": "综合评价与优化",
+    "link": "/content/p-31cd05cb3193011d.html"
+  },
+  {
+    "model": "多目标优化、博弈",
+    "figure": "可行非支配解集；收益/策略情景图",
+    "table": "各目标、约束、选解依据或均衡验证",
+    "group": "综合评价与优化",
+    "condition": "综合评价与优化",
+    "link": "/content/p-31cd05cb3193011d.html"
+  },
+  {
+    "model": "机理、ODE/PDE、数值计算、仿真",
+    "figure": "观测与模拟、误差/收敛、情景分布",
+    "table": "参数来源、初边值、误差与重复设计",
+    "group": "机理仿真与网络空间",
+    "condition": "机理仿真与网络空间",
+    "link": "/content/p-531193294e06ea46.html"
+  },
+  {
+    "model": "网络、空间与地理模型",
+    "figure": "有定义的网络/地图、空间残差",
+    "table": "节点边或地区口径、空间验证与指标",
+    "group": "机理仿真与网络空间",
+    "condition": "机理仿真与网络空间",
+    "link": "/content/p-531193294e06ea46.html"
+  },
+  {
+    "model": "文本、信号、图像",
+    "figure": "任务对应的结果图、误差示例、信号/图像对照",
+    "table": "实体级划分、任务指标、失败与压力测试",
+    "group": "文本信号与图像",
+    "condition": "文本信号与图像",
+    "link": "/content/p-939493865363049f.html"
+  }
+]

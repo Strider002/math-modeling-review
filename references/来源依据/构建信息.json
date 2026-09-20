@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0.0",
+  "package": "math-modeling-review",
+  "prepared_at": "2026-09-20",
+  "source_repository": "https://github.com/Strider002/math-modeling-library",
+  "source_commit": "cbdb69c014ba7761dc3a3f468001719c81be65f8",
+  "source_policy": "Pinned repository baseline selected for redistribution; no private worktrees, raw attachments, repository history, or restricted project derivatives are bundled.",
+  "copied_method_documents": 19,
+  "copied_case_documents": 0,
+  "evaluation": "Package and engineering validation only; no award or end-to-end performance claim.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "0FD7235ACAB099A4B6E79666FC4466C3D4BA56BF729AB3930160EA270E3600BA",
+      "bytes": 1008
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "90311F1C179576FF7FB4B3CEF08584CFDB8B9745A50694E595558C918C0C1C43",
+      "bytes": 344
+    },
+    {
+      "path": "assets/模板/论文图表清单模板.md",
+      "sha256": "5E3BEA932999176CBC44C4EE07EEC0F604F1FDC2152AD291C632C4BA7710CAFA",
+      "bytes": 954
+    },
+    {
+      "path": "assets/模板/模型审查报告模板.md",
+      "sha256": "5BD0C0A9D3CC250F756B92F90214C5CB4B716B4571B8C0EF83AD1236493D6EB1",
+      "bytes": 895
+    },
+    {
+      "path": "assets/模板/AI工具使用详情模板.md",
+      "sha256": "30C301E36DF7F144FD6C9899FE105215F3AEE6BCE79FE665C55E7E5430D40D3B",
+      "bytes": 2974
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "CFF3D331A2860269B21ED4137CD2111D951651F7C88CF92A46E1A7373E49B4B9",
+      "bytes": 1067
+    },
+    {
+      "path": "LICENSE-DOCS",
+      "sha256": "17F9BD0674246DA3901EA78E4DB7104528A499C7A7EA3F0F31B16AF30D49C2DB",
+      "bytes": 737
+    },
+    {
+      "path": "LICENSES.md",
+      "sha256": "954982E668EE48ADAFFF8E6A435E49FA70EC2DEFAC0FC354FEC5B4316EE5A6E3",
+      "bytes": 2956
+    },
+    {
+      "path": "references/案例反例/常见错误与复盘索引.md",
+      "sha256": "B2E960DAA9C84B7951A1DB04F2AD9E18DE1A168C27B21E2F81320C5985C2F54A",
+      "bytes": 1462
+    },
+    {
+      "path": "references/来源依据/方法依据/25_优化建模进阶.md",
+      "sha256": "F21D0654BD0BA78FFA1C52C6E7132A6FD6D4BAD992F94548A18CCA04941A817D",
+      "bytes": 12271
+    },
+    {
+      "path": "references/来源依据/方法依据/26_聚类分析严谨方法卡.md",
+      "sha256": "30F7022796113E00CF800BB25F4CD42B7C80004F18A2B8F52E19DAA386E91AF3",
+      "bytes": 17667
+    },
+    {
+      "path": "references/来源依据/方法依据/27_主成分分析严谨方法卡.md",
+      "sha256": "1B385D082F64DBF02ADE81D251B6001509583795693C28486E742CC072E4DBB6",
+      "bytes": 16960
+    },
+    {
+      "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
+      "sha256": "69E2804E3018A7D4009B2CDDA4DAD3C6B0DBAD71634013CB3F16CBBA787C65BD",
+      "bytes": 9540
+    },
+    {
+      "path": "references/来源依据/方法依据/31_树模型与集成学习严谨方法卡.md",
+      "sha256": "44E39ACA15EC6CA98FE7FCBD802A602BE5A3F90A1EF68C64CC8BA3BEED615908",
+      "bytes": 14387
+    },
+    {
+      "path": "references/来源依据/方法依据/32_神经网络严谨方法卡.md",
+      "sha256": "46241293139C86C01BECB585653D3E3DC76AB1080F1A18A1E2D01AE4F89BD7D5",
+      "bytes": 23686
+    },
+    {
+      "path": "references/来源依据/方法依据/33_EM算法与潜变量模型严谨方法卡.md",
+      "sha256": "70B9E8225232F157563EF3B872A50253FD82A000156D73A7E6441ACF877CD112",
+      "bytes": 14112
+    },
+    {
+      "path": "references/来源依据/方法依据/35_回归模型选择与方法总览.md",
+      "sha256": "4A9AFB0E02C1BBCE27F952ADB35C5DF30842E682E8B290A2993670D50DEEC0FE",
+      "bytes": 8397
+    },
+    {
+      "path": "references/来源依据/方法依据/36_AB题机理建模与仿真方法卡.md",
+      "sha256": "ECDE8C9829E1472EEB484BA5EDE058100F38B6E7B2432B20C9A04F3639438A60",
+      "bytes": 2262
+    },
+    {
+      "path": "references/来源依据/方法依据/37_文本数据建模方法卡.md",
+      "sha256": "762C8BB729288F03F3D126BDE3CAC8A2A6DD76B8316DD65B49F52BC93D223C33",
+      "bytes": 1761
+    },
+    {
+      "path": "references/来源依据/方法依据/38_信号处理与频谱建模方法卡.md",
+      "sha256": "AB7D02AE15C2D6014D2A452BA4191B63B1D719E89D6F96DBF791582BBEFD6A0F",
+      "bytes": 1673
+    },
+    {
+      "path": "references/来源依据/方法依据/39_图像数据建模方法卡.md",
+      "sha256": "9520A16641F0853B77C71D02179577C9619ACB3652E31E8A3D1CE861AA6F6C97",
+      "bytes": 1798
+    },
+    {
+      "path": "references/来源依据/方法依据/索引.md",
+      "sha256": "99BC1CDDCFFFFA5DA3856F9CDAD0A2E151791A698BC4916071D0331216D8023A",
+      "bytes": 1263
+    },
+    {
+      "path": "references/来源依据/来源索引.md",
+      "sha256": "F1B5A772FDBEE3D3B387EC10C122AD49C3898C8F8E8AF7D236D84BA83ADD6203",
+      "bytes": 51479
+    },
+    {
+      "path": "references/来源依据/图表指南来源.md",
+      "sha256": "8F2B639E439B9F64EC5666B62AE4830962307D8836326F96485240C9C88701E6",
+      "bytes": 1626
+    },
+    {
+      "path": "references/来源依据/证据注册/claims_registry.json",
+      "sha256": "80D4B4898042505DDBCB311A45C4B56D334467A9E3FC4A123D0FB116A714715D",
+      "bytes": 7612
+    },
+    {
+      "path": "references/来源依据/证据注册/source_registry.json",
+      "sha256": "DF34A645AEA7B7C4CFEFDA1DC83A9FF683FFDF1C52657A8372E003723756EEDD",
+      "bytes": 6487
+    },
+    {
+      "path": "references/论文图表/00_模型与图表总表.md",
+      "sha256": "58C45749BFFE72B81C0687C82D55F2948DA6D979AFDD8D746E017056DD77C8F9",
+      "bytes": 4384
+    },
+    {
+      "path": "references/论文图表/分类与机器学习.md",
+      "sha256": "C781F8CFF2D8EA3785A3BAF3A2A22257BC2AA1FA0C8CD2B71BFD4AB51AF75437",
+      "bytes": 2864
+    },
+    {
+      "path": "references/论文图表/回归与统计推断.md",
+      "sha256": "45EF6A192C36903C38FDF37C8D9979E8DF083CF839CCC673D207575D68F1DFEC",
+      "bytes": 3075
+    },
+    {
+      "path": "references/论文图表/机理仿真与网络空间.md",
+      "sha256": "A57172F9975253A3C11FA0E016A3B4253D992F3387E87E227406E8464C89F6A1",
+      "bytes": 2926
+    },
+    {
+      "path": "references/论文图表/降维与聚类.md",
+      "sha256": "1227D0E781D313122A00C6A7DCC83B95B611203FAFD124C5EDDC30E407D0C29D",
+      "bytes": 2611
+    },
+    {
+      "path": "references/论文图表/时间序列与概率预测.md",
+      "sha256": "B596DDC913F2C8CDD4AB8BDE9EF33AAB9B790739B503B10F844D494F2F1FDFD0",
+      "bytes": 2698
+    },
+    {
+      "path": "references/论文图表/文本信号与图像.md",
+      "sha256": "04B10C51A7D21F43BE3EF251F7D21DB422C6811427843E304FA7F96EE586B0E5",
+      "bytes": 3262
+    },
+    {
+      "path": "references/论文图表/综合评价与优化.md",
+      "sha256": "5CAE3534F26DD193AA36120939454EDAE57EA35FBCFB427F422FAD42EDE45415",
+      "bytes": 3087
+    },
+    {
+      "path": "references/论文与交付/12_论文写作与可视化.md",
+      "sha256": "D26BF7DB2BE6BE5149014C3B82300D45CA51C1BC6B9E6A5522299F54BE149288",
+      "bytes": 10075
+    },
+    {
+      "path": "references/论文与交付/13_竞赛工作流与检查清单.md",
+      "sha256": "A9277A3CC449234FAAF1F2F9AF98864037FAD6B17C35F40CBC327AD4BFCF59CA",
+      "bytes": 7919
+    },
+    {
+      "path": "references/论文与交付/交付检查.md",
+      "sha256": "1535D0BCD98C064A67CF9C7B66141079969B72C3822020CF4B476F5B34AD18A4",
+      "bytes": 1833
+    },
+    {
+      "path": "references/论文与交付/竞赛规则核对.md",
+      "sha256": "561C2DD789AFA534B6C06AEEE4CE689D3009A5474E660A56ED79029C9960C635",
+      "bytes": 1671
+    },
+    {
+      "path": "references/模型审查/11_验证敏感性与不确定性.md",
+      "sha256": "73EDAE1D6495393D7017D2EF7E376C1C6BD37E131EE22CF2D1854E20B6A1819B",
+      "bytes": 5957
+    },
+    {
+      "path": "references/模型审查/14_公式与指标速查.md",
+      "sha256": "248F87FD76D5B03C42AB3D1CFE4514C894425D547A686B9123F4D2769584ED21",
+      "bytes": 4872
+    },
+    {
+      "path": "references/模型审查/15_代码与实验规范.md",
+      "sha256": "D021C5A03B761B8DEEEE30008B39B51DCC5E70F78A7936DCCAAAD188A071D614",
+      "bytes": 7058
+    },
+    {
+      "path": "references/模型审查/24_机器学习评审标准.md",
+      "sha256": "8593CCD17A3E783FA972CA20DEC866B1E9706A9C5E9EAED94B2939D74632E5D3",
+      "bytes": 10308
+    },
+    {
+      "path": "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md",
+      "sha256": "13EDB4FFA4146469F0B27B3525C7E419961F24508D22493F882BF944E06CCB7E",
+      "bytes": 11631
+    },
+    {
+      "path": "references/模型审查/分模型检查要点.md",
+      "sha256": "53D92D503A54830C7AA0ADFFC9E1C9E98FE42B7E314D021558682EBFE960B2A4",
+      "bytes": 3475
+    },
+    {
+      "path": "references/审查导航.md",
+      "sha256": "B663DACED76EEDD391E8853D395DDA1C570DAAB095AAC23AC6F4B8108477BC0C",
+      "bytes": 2017
+    },
+    {
+      "path": "references/通用规范/00A_证据与质量门禁.md",
+      "sha256": "12FD368D076A5C4D5928EE3C490233BC1A91B796CC4D943EE776999441B12F23",
+      "bytes": 7939
+    },
+    {
+      "path": "references/通用规范/00D_数据阶段门禁.md",
+      "sha256": "09EA8339EE8BCFFFAA49F24E011D3C7CF1CD3DA0A330988533C3F1735546009B",
+      "bytes": 7292
+    },
+    {
+      "path": "references/通用规范/00E_选模与验证设计门禁.md",
+      "sha256": "BB45318FECDB1A9362E4770609CA22B02BDD00A3B273162904D68AA1E5800992",
+      "bytes": 7599
+    },
+    {
+      "path": "references/通用规范/00Q_永久质量核心.md",
+      "sha256": "8EF9936C95820AC80F6F040EACA64AAE40058D50DC880DC78FB39546A06B507C",
+      "bytes": 5499
+    },
+    {
+      "path": "scripts/project_paths.ps1",
+      "sha256": "5B7E4EF4EF8C99ED95110A3737E5F2AA7178C697F7BF8B40DFB1D6313AF72703",
+      "bytes": 2345
+    },
+    {
+      "path": "scripts/validate_skill_package.ps1",
+      "sha256": "FD0C4048C1710116C621BCA6CA620E8C1249FB8683535B1CC842DE326D0E6CC7",
+      "bytes": 6537
+    },
+    {
+      "path": "scripts/validate_submission.ps1",
+      "sha256": "DB83038C57B2F21E29B31321D8C8009211D420F710BBFACA3870DF90644C2549",
+      "bytes": 5817
+    },
+    {
+      "path": "scripts/verify_results.ps1",
+      "sha256": "6E3B464D00E998DCFC2D721C8FB4D851B374D2577E6543BF16177AFC17BD0498",
+      "bytes": 2626
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "A8124A8004124E9A376071E9D2A50E3FCACDAB12D3591948CE89F5561B052DE0",
+      "bytes": 3914
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-09-20",
+    "skill_creator_validation": "pass",
+    "local_structure_links_and_sources": "pass",
+    "private_content_screen": "pass",
+    "engineering_assertions": 33,
+    "library_route_executions": 296,
+    "library_golden_route_specs": 30,
+    "environment": "Windows / PowerShell 7; synthetic fixtures only",
+    "limits": "No real-model reruns, no host-level trigger evaluation, no claim of competition compliance or award improvement."
+  },
+  "publication_revision": {
+    "date": "2026-09-20",
+    "corrections": [
+      {
+        "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
+        "reason": "Repair one mathematical index that the earlier path-redaction step incorrectly replaced; derive the bound directly from the surrounding all-i condition, without loading private source material."
+      }
+    ]
+  }
+}

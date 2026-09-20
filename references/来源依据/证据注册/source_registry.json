@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0.0",
+  "entries": [
+    {
+      "source_id": "CUMCM-FORMAT-2026",
+      "title": "2026 年全国大学生数学建模竞赛论文格式规范",
+      "evidence_grade": "A",
+      "status": "已核验",
+      "url": "https://www.mcm.edu.cn/upload_cn/node/775/cQMeL0YY905244c8bd4b9af832f1699446d8385e.pdf",
+      "accessed_at": "2026-08-05"
+    },
+    {
+      "source_id": "CUMCM-AI-RULE-2026",
+      "title": "全国大学生数学建模竞赛人工智能工具使用规定（2026年试行）",
+      "evidence_grade": "A",
+      "status": "已核验",
+      "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+      "accessed_at": "2026-09-04"
+    },
+    {
+      "source_id": "COMAP-RULES-2027",
+      "title": "2027 MCM/ICM Instructions",
+      "evidence_grade": "A",
+      "status": "条件通过",
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/instructions.php",
+      "accessed_at": "2026-08-09"
+    },
+    {
+      "source_id": "XGBOOST-2016",
+      "title": "XGBoost: A Scalable Tree Boosting System",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1145/2939672.2939785",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "source_id": "SCIPY-DE-1.16.1",
+      "title": "scipy.optimize.differential_evolution 1.16.1",
+      "evidence_grade": "B",
+      "status": "条件通过",
+      "url": "https://docs.scipy.org/doc/scipy-1.16.1/reference/generated/scipy.optimize.differential_evolution.html",
+      "accessed_at": "2026-08-21"
+    },
+    {
+      "source_id": "DLR-EM-1977",
+      "title": "Maximum Likelihood from Incomplete Data via the EM Algorithm",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1111/j.2517-6161.1977.tb01600.x",
+      "accessed_at": "2026-08-09"
+    },
+    {
+      "source_id": "WU-EM-1983",
+      "title": "On the Convergence Properties of the EM Algorithm",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1214/aos/1176346060",
+      "accessed_at": "2026-08-09"
+    },
+    {
+      "source_id": "SENS-SALTELLI-ANNONI-2010",
+      "title": "How to avoid a perfunctory sensitivity analysis",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1016/j.envsoft.2010.04.012",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-SOBOL-2001",
+      "title": "Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1016/S0378-4754(00)00270-6",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-SHAPLEY-2016",
+      "title": "Shapley Effects for Global Sensitivity Analysis: Theory and Computation",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1137/15M1048070",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-EFRON-1979",
+      "title": "Bootstrap Methods: Another Look at the Jackknife",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1214/aos/1176344552",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-BICKEL-FREEDMAN-1981",
+      "title": "Some Asymptotic Theory for the Bootstrap",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1214/aos/1176345637",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-KUNSCH-1989",
+      "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1214/aos/1176347265",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-BOUSQUET-2002",
+      "title": "Stability and Generalization",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://www.jmlr.org/papers/v2/bousquet02a.html",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-BOUTHILLIER-2021",
+      "title": "Accounting for Variance in Machine Learning Benchmarks",
+      "evidence_grade": "B",
+      "status": "已核验",
+      "url": "https://proceedings.mlsys.org/paper/2021/hash/0184b0cd3cfb185989f858a1d9f5c1eb-Abstract.html",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-BENHUR-2002",
+      "title": "A Stability Based Method for Discovering Structure in Clustered Data",
+      "evidence_grade": "B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1142/9789812799623_0002",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "SENS-BENDAVID-2006",
+      "title": "A Sober Look at Clustering Stability",
+      "evidence_grade": "B",
+      "status": "已核验",
+      "url": "https://doi.org/10.1007/11776420_4",
+      "accessed_at": "2026-09-05"
+    },
+    {
+      "source_id": "COMAP-2025-C-RESULTS",
+      "title": "2025 MCM Problem C Results",
+      "evidence_grade": "A",
+      "status": "已核验",
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/2025_MCM_Problem_C_Results.pdf",
+      "accessed_at": "2026-09-07"
+    },
+    {
+      "source_id": "COUNTREG-JSS-2008",
+      "title": "Regression Models for Count Data in R",
+      "evidence_grade": "A/B",
+      "status": "已核验",
+      "url": "https://www.jstatsoft.org/article/view/v027i08",
+      "accessed_at": "2026-09-07"
+    },
+    {
+      "source_id": "STAN-RHAT-ESS-2.39",
+      "title": "Stan Reference Manual 2.39: Analysis",
+      "evidence_grade": "B",
+      "status": "已核验",
+      "url": "https://mc-stan.org/docs/2_39/reference-manual/analysis.html",
+      "accessed_at": "2026-09-07"
+    },
+    {
+      "source_id": "STAN-PPC-2.38",
+      "title": "Stan User's Guide 2.38: Posterior Predictive Checks",
+      "evidence_grade": "B",
+      "status": "已核验",
+      "url": "https://mc-stan.org/docs/2_38/stan-users-guide/posterior-predictive-checks.html",
+      "accessed_at": "2026-09-07"
+    },
+    {
+      "source_id": "IBM-ASSOCRULE-LIFT-2026",
+      "title": "IBM Db2: Lift in an association rule",
+      "evidence_grade": "B",
+      "status": "条件通过",
+      "url": "https://www.ibm.com/docs/en/db2/11.1.0?topic=SSEPGG_11.1.0%2Fcom.ibm.im.model.doc%2Fc_lift_in_an_association_rule.htm",
+      "accessed_at": "2026-09-07"
+    }
+  ]
+}

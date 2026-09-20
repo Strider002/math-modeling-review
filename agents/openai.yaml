@@ -1,0 +1,6 @@
+interface:
+  display_name: "数学建模审查与论文图表"
+  short_description: "审查数学建模证据，并按模型与论文主张规划可核验的图像和表格"
+  default_prompt: "请使用 $math-modeling-review 审查已有成果，并列出支持论文主张所需的图像和表格。"
+policy:
+  allow_implicit_invocation: true

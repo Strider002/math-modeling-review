@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "本包所含方法的既有高风险主张注册子集；不表示全库逐公式核验完成。",
+  "entries": [
+    {
+      "claim_id": "RULE-CUMCM-FORMAT-2026",
+      "statement": "2026 国赛论文与支撑材料的页数、大小、匿名和代码要求以当年官方格式规范为准。",
+      "status": "已核验",
+      "locations": [
+        "references/论文与交付/12_论文写作与可视化.md#14-国赛当前格式硬约束"
+      ],
+      "evidence": [
+        {
+          "source_id": "CUMCM-FORMAT-2026",
+          "locator": "官方 PDF 全文",
+          "support": "direct"
+        }
+      ],
+      "review_due": "2027-06-01"
+    },
+    {
+      "claim_id": "RULE-CUMCM-AI-2026",
+      "statement": "2026 国赛 AI 工具规则要求公开透明、参赛队主导核心建模与分析、逐项人工核验、如实声明，并在使用时提交规定的详情 PDF；不合规按违反规则处理。",
+      "status": "已核验",
+      "locations": [
+        "references/论文与交付/12_论文写作与可视化.md#141-2026-年-ai-工具使用硬约束",
+        "references/论文与交付/13_竞赛工作流与检查清单.md#11-2026-年-ai-工具使用提交检查"
+      ],
+      "evidence": [
+        {
+          "source_id": "CUMCM-AI-RULE-2026",
+          "locator": "第 1—7 条",
+          "support": "direct"
+        }
+      ],
+      "review_due": "2027-06-01"
+    },
+    {
+      "claim_id": "RULE-COMAP-2027",
+      "statement": "2027 MCM/ICM 当前页面规定单 PDF、25 页主体范围、身份限制及 AI 报告要求。",
+      "status": "条件通过",
+      "locations": [
+        "references/论文与交付/12_论文写作与可视化.md#15-2027-mcmicm-当前格式硬约束"
+      ],
+      "evidence": [
+        {
+          "source_id": "COMAP-RULES-2027",
+          "locator": "official instructions page",
+          "support": "direct"
+        }
+      ],
+      "review_due": "2027-01-01"
+    },
+    {
+      "claim_id": "FORMULA-XGBOOST-GAIN",
+      "statement": "在文中给定的 XGBoost 二阶近似符号约定下，正 split gain 表示近似正则目标因分裂而下降。",
+      "status": "已核验",
+      "locations": [
+        "references/来源依据/方法依据/31_树模型与集成学习严谨方法卡.md#4-xgboost-二阶目标与-split-gain"
+      ],
+      "evidence": [
+        {
+          "source_id": "XGBOOST-2016",
+          "locator": "Eq. (7), Section 2.2",
+          "support": "derivation"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-DE-NO-CERTIFICATE",
+      "statement": "SciPy differential_evolution 的数值终止条件不是全局最优证书。",
+      "status": "条件通过",
+      "locations": [
+        "references/来源依据/方法依据/25_优化建模进阶.md#差分进化"
+      ],
+      "evidence": [
+        {
+          "source_id": "SCIPY-DE-1.16.1",
+          "locator": "termination and return documentation",
+          "support": "software_contract"
+        }
+      ]
+    },
+    {
+      "claim_id": "THEOREM-EM-MONOTONICITY",
+      "statement": "在精确 E 步且 M/GEM 步令 Q 不下降等条件下，EM/GEM 的观测似然不下降。",
+      "status": "已核验",
+      "locations": [
+        "references/来源依据/方法依据/33_EM算法与潜变量模型严谨方法卡.md#11-证据声明登记"
+      ],
+      "evidence": [
+        {
+          "source_id": "DLR-EM-1977",
+          "locator": "Eq. (2.17), Theorem 1",
+          "support": "theorem"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-EM-CONVERGENCE",
+      "statement": "EM 的目标单调性不推出全局最优或无条件参数序列收敛。",
+      "status": "已核验",
+      "locations": [
+        "references/来源依据/方法依据/33_EM算法与潜变量模型严谨方法卡.md#11-证据声明登记"
+      ],
+      "evidence": [
+        {
+          "source_id": "WU-EM-1983",
+          "locator": "pp. 95-100, Theorems 1-5",
+          "support": "theorem_and_correction"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-SENS-OAT",
+      "statement": "单点 OAT 不能单独支持非线性、多输入交互模型的全局重要性结论。",
+      "status": "已核验",
+      "locations": [
+        "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md#3-局部敏感性用于邻域诊断不作全局归因"
+      ],
+      "evidence": [
+        {
+          "source_id": "SENS-SALTELLI-ANNONI-2010",
+          "locator": "Abstract; Why modelers prefer OAT; Suggested practices, pp. 1508-1517",
+          "support": "method_limit"
+        }
+      ]
+    },
+    {
+      "claim_id": "FORMULA-SENS-SOBOL",
+      "statement": "经典 Sobol 一阶和总效应的方差公式要求独立输入及有限非零输出方差。",
+      "status": "已核验",
+      "locations": [
+        "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md#4-全局敏感性先定义联合输入空间"
+      ],
+      "evidence": [
+        {
+          "source_id": "SENS-SOBOL-2001",
+          "locator": "Theorems 1-3 and Eqs. (1)-(5), pp. 271-280",
+          "support": "derivation"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-BOOTSTRAP-DEPENDENCE",
+      "statement": "相关序列逐观测 i.i.d. 重采样会破坏依赖，需在相应条件下采用块式重采样。",
+      "status": "已核验",
+      "locations": [
+        "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md#5-bootstrap重采样的是独立单位"
+      ],
+      "evidence": [
+        {
+          "source_id": "SENS-KUNSCH-1989",
+          "locator": "Abstract and Sections 2-3, pp. 1217-1241",
+          "support": "method_and_conditions"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-BOOTSTRAP-NONREGULAR",
+      "statement": "普通 n-out-of-n Bootstrap 对极值等部分非正则统计量可能不一致。",
+      "status": "已核验",
+      "locations": [
+        "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md#5-bootstrap重采样的是独立单位"
+      ],
+      "evidence": [
+        {
+          "source_id": "SENS-BICKEL-FREEDMAN-1981",
+          "locator": "Section 6, especially Counter-example 2, pp. 1196-1217",
+          "support": "counterexample"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-ALGORITHM-STABILITY",
+      "statement": "经验多种子或删点波动是稳定性诊断，不能直接冒充理论算法稳定性定义或泛化界。",
+      "status": "已核验",
+      "locations": [
+        "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md#6-机器学习的算法稳定性"
+      ],
+      "evidence": [
+        {
+          "source_id": "SENS-BOUSQUET-2002",
+          "locator": "Definitions and generalization bounds, JMLR 2:499-526",
+          "support": "theorem_scope"
+        }
+      ]
+    },
+    {
+      "claim_id": "LIMIT-CLUSTER-STABILITY",
+      "statement": "聚类重采样稳定性衡量可复现性，但不是结构真实、唯一或有业务意义的充分证据。",
+      "status": "已核验",
+      "locations": [
+        "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md#7-聚类稳定性"
+      ],
+      "evidence": [
+        {
+          "source_id": "SENS-BENHUR-2002",
+          "locator": "Sections 2-3, pp. 6-10",
+          "support": "method"
+        },
+        {
+          "source_id": "SENS-BENDAVID-2006",
+          "locator": "Definition 6, Theorems 10 and 15, pp. 4-10",
+          "support": "counterexample_and_limit"
+        }
+      ]
+    }
+  ]
+}

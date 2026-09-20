@@ -1,0 +1,15 @@
+node_modules/
+.npm-task-cache/
+docs/content/
+docs/catalog.md
+docs/download.md
+docs/public/downloads/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+.release/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

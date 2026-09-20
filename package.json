@@ -1,0 +1,25 @@
+{
+  "name": "math-modeling-review-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "prepare:docs": "node web-tools/prepare.mjs",
+    "dev": "npm run prepare:docs && vitepress dev docs --host 127.0.0.1",
+    "build": "npm run prepare:docs && vitepress build docs && node web-tools/check-built.mjs",
+    "preview": "vitepress preview docs --host 127.0.0.1",
+    "test": "node --test web-tools/*.test.mjs",
+    "check:release": "node web-tools/check-release.mjs"
+  },
+  "devDependencies": {
+    "fflate": "0.8.3",
+    "markdown-it-mathjax3": "4.3.2",
+    "vitepress": "1.6.4",
+    "vue": "3.5.43"
+  },
+  "overrides": {
+    "vite": "6.4.3",
+    "@xmldom/xmldom": "0.9.12"
+  }
+}
