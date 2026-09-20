@@ -56,7 +56,9 @@ const missing = catalog.filter(item => !covered.has(item.path))
 if (missing.length) throw new Error(`Uncategorized public resources: ${missing.map(i => i.path).join(', ')}`)
 writeGenerated('docs/catalog.md', catalogText)
 
-const zipEntries = Object.fromEntries(files.map(file => [`${release.name}/${file.path}`, [new Uint8Array(file.data), { mtime: new Date('2026-09-20T00:00:00Z') }]]))
+// ZIP stores local calendar fields, not a timezone. Fix the calendar fields so
+// Windows and Linux build exactly the same download bytes and SHA-256.
+const zipEntries = Object.fromEntries(files.map(file => [`${release.name}/${file.path}`, [new Uint8Array(file.data), { mtime: new Date(2026, 8, 20, 0, 0, 0) }]]))
 const archiveName = `${release.name}-v${release.version}.zip`
 const archive = zipSync(zipEntries, { level: 9 })
 const digest = sha256(archive)
