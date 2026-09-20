@@ -2,17 +2,42 @@
 
 面向国赛、美赛与一般数学建模的独立 Agent Skill。它与另一 Skill 共享网站导航，但不依赖另一仓库才能使用。
 
-[在线导航与阅读](https://strider002.github.io/math-modeling-review/) · [下载与使用](https://strider002.github.io/math-modeling-review/download.html) · [建模方法库](https://github.com/Strider002/math-modeling-library-skill) · [审查与论文图表](https://github.com/Strider002/math-modeling-review)
+[在线导航与阅读](https://strider002.github.io/math-modeling-review/) · [下载与使用](https://strider002.github.io/math-modeling-review/download.html) · [建模方法库](https://github.com/Strider002/math-modeling-library) · [审查与论文图表](https://github.com/Strider002/math-modeling-review)
+
+## 导航
+
+- [这个 Skill 做什么](#这个-skill-做什么)
+- [主要内容](#主要内容)
+- [下载与使用](#下载与使用)
+- [本地预览网站](#本地预览网站)
+- [发布与维护边界](#发布与维护边界)
 
 ## 这个 Skill 做什么
 
 只读审查已有模型、代码、结果与论文，根据模型、任务和主张规划论文需要的图与表，明确证据缺口与补充动作。
 
+- **科学审查**：检查数据划分与泄漏、公式和求解、基线与训练外验证、结果与结论的一致性。
+- **图表规划**：按模型、任务和主张列出候选图表，写清坐标轴、单位、字段、适用条件和正文/附录位置。
+- **表达与交付**：检查摘要—正文—图表的数字一致性、术语和论证，并提示当届规则核对。
+- **默认只读**：区分阻断问题、证据缺口和可选改进；不自动执行用户代码、重训、重算或改稿。
+
+## 主要内容
+
+| 内容 | 入口 |
+|---|---|
+| 审查任务导航 | [审查导航](references/审查导航.md) |
+| 分模型审查 | [检查要点](references/模型审查/分模型检查要点.md) |
+| 13 类模型/任务的图表映射 | [模型与论文图表总表](references/论文图表/00_模型与图表总表.md) |
+| 7 组详细图表指南 | 回归统计、分类学习、时间/概率预测、降维聚类、评价优化、机理网络、多模态 |
+| 审查报告与图表清单 | [报告模板](assets/模板/模型审查报告模板.md)、[图表模板](assets/模板/论文图表清单模板.md) |
+
+只有模型名称时不能倒推结果；缺图、缺计算结果和缺有效验证应分别报告。
+
 本仓库根目录的 [SKILL.md](SKILL.md) 是 Agent 入口；`references/`、`scripts/`、`assets/` 和 `agents/` 为 Skill 资源。`docs/` 与 `web-tools/` 仅用于网站和打包，不是运行 Skill 的前置依赖。
 
 ## 下载与使用
 
-从网站的“下载与使用”页面获取独立 ZIP，解压后保留 `math-modeling-review/SKILL.md` 与完整配套目录。ZIP 不含网站依赖或 Git 历史。使用前核对下载页的 SHA-256。
+从网站的“下载与使用”页面或 [GitHub Releases](https://github.com/Strider002/math-modeling-review/releases) 获取独立 ZIP，解压后保留 `math-modeling-review/SKILL.md` 与完整配套目录。ZIP 不含网站依赖或 Git 历史。使用前核对下载页的 SHA-256。
 
 Codex 可将解压后的完整目录放入项目的 `.agents/skills/`，再在对话中显式调用 `$math-modeling-review`；不要覆盖已有同名 Skill。其他支持 `SKILL.md` 的工具按其官方说明配置，未逐一验证兼容性。参见 [OpenAI 官方技能文档](https://learn.chatgpt.com/docs/build-skills)。
 

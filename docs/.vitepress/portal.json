@@ -9,7 +9,7 @@
       "label": "建模方法库",
       "short": "建模",
       "description": "从问题拆解、选模到验证与交付",
-      "repository": "math-modeling-library-skill"
+      "repository": "math-modeling-library"
     },
     {
       "id": "math-modeling-review",

@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "package": "math-modeling-review",
   "prepared_at": "2026-09-20",
-  "source_repository": "https://github.com/Strider002/math-modeling-library",
+  "source_repository": "https://github.com/Strider002/Math-library",
   "source_commit": "cbdb69c014ba7761dc3a3f468001719c81be65f8",
   "source_policy": "Pinned repository baseline selected for redistribution; no private worktrees, raw attachments, repository history, or restricted project derivatives are bundled.",
   "copied_method_documents": 19,
@@ -291,6 +291,7 @@
     "environment": "Windows / PowerShell 7; synthetic fixtures only",
     "limits": "No real-model reruns, no host-level trigger evaluation, no claim of competition compliance or award improvement."
   },
+  "source_repository_access": "Private historical baseline; this public package is self-contained and does not grant access to the original repository.",
   "publication_revision": {
     "date": "2026-09-20",
     "corrections": [
