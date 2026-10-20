@@ -27,6 +27,7 @@ jobs:
       - run: npm ci --ignore-scripts --registry https://registry.npmjs.org
       - run: npm audit --audit-level=moderate --registry https://registry.npmjs.org
       - run: npm test
+      - run: npm run test:skills
       - run: npm run check:release
       - run: npm run build
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3

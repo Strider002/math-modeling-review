@@ -181,18 +181,18 @@
     },
     {
       "path": "references/论文与交付/12_论文写作与可视化.md",
-      "sha256": "D26BF7DB2BE6BE5149014C3B82300D45CA51C1BC6B9E6A5522299F54BE149288",
-      "bytes": 10075
+      "sha256": "9B2875C2FC78FD9DD54C8E8D23192C86019B44C30AFE610B322B28669FF6A223",
+      "bytes": 17093
     },
     {
       "path": "references/论文与交付/13_竞赛工作流与检查清单.md",
-      "sha256": "A9277A3CC449234FAAF1F2F9AF98864037FAD6B17C35F40CBC327AD4BFCF59CA",
-      "bytes": 7919
+      "sha256": "4B227ECEDCB50F8A56771F0AA1477BAEADDBDCBEB72C6C0C0A96E99214B7B83D",
+      "bytes": 9478
     },
     {
       "path": "references/论文与交付/交付检查.md",
-      "sha256": "1535D0BCD98C064A67CF9C7B66141079969B72C3822020CF4B476F5B34AD18A4",
-      "bytes": 1833
+      "sha256": "730EBC0CEE86F26AC5B4997F57BFD1EC1FFC322A69D6ACA1AE3CC08D9D7A0CC4",
+      "bytes": 2043
     },
     {
       "path": "references/论文与交付/竞赛规则核对.md",
@@ -201,8 +201,8 @@
     },
     {
       "path": "references/模型审查/11_验证敏感性与不确定性.md",
-      "sha256": "73EDAE1D6495393D7017D2EF7E376C1C6BD37E131EE22CF2D1854E20B6A1819B",
-      "bytes": 5957
+      "sha256": "DD9FFB79699E2D1FE237B740A9329E7884494D645953949F311FF7595C1BF697",
+      "bytes": 6215
     },
     {
       "path": "references/模型审查/14_公式与指标速查.md",
@@ -211,8 +211,8 @@
     },
     {
       "path": "references/模型审查/15_代码与实验规范.md",
-      "sha256": "D021C5A03B761B8DEEEE30008B39B51DCC5E70F78A7936DCCAAAD188A071D614",
-      "bytes": 7058
+      "sha256": "1635231862FB32B7AA3CC73B93CE1751235F0C60772225BF1560CF996B10E331",
+      "bytes": 7820
     },
     {
       "path": "references/模型审查/24_机器学习评审标准.md",
@@ -231,8 +231,8 @@
     },
     {
       "path": "references/审查导航.md",
-      "sha256": "B663DACED76EEDD391E8853D395DDA1C570DAAB095AAC23AC6F4B8108477BC0C",
-      "bytes": 2017
+      "sha256": "ACC64378CF4DF304A687BA0DD8D64E7F869295117F619E87985A705DA15685AC",
+      "bytes": 2188
     },
     {
       "path": "references/通用规范/00A_证据与质量门禁.md",
@@ -246,12 +246,12 @@
     },
     {
       "path": "references/通用规范/00E_选模与验证设计门禁.md",
-      "sha256": "BB45318FECDB1A9362E4770609CA22B02BDD00A3B273162904D68AA1E5800992",
-      "bytes": 7599
+      "sha256": "F64A7B5F5C0E7CE8EA8DCF6C752C4ACD1F713FED3621219BDCF02973C79B1FDA",
+      "bytes": 8164
     },
     {
       "path": "references/通用规范/00Q_永久质量核心.md",
-      "sha256": "8EF9936C95820AC80F6F040EACA64AAE40058D50DC880DC78FB39546A06B507C",
+      "sha256": "DAA9FF15C7740AE873F3836AAB42E270826C51FBAE73F42D5114FB8E3C1BF4A2",
       "bytes": 5499
     },
     {
@@ -271,13 +271,28 @@
     },
     {
       "path": "scripts/verify_results.ps1",
-      "sha256": "6E3B464D00E998DCFC2D721C8FB4D851B374D2577E6543BF16177AFC17BD0498",
-      "bytes": 2626
+      "sha256": "F0F7A0AB9E371BBD9821624AC3C24BD8FEABAAFBDDB8A158DAEA2ADAEF542A14",
+      "bytes": 4017
     },
     {
       "path": "SKILL.md",
-      "sha256": "A8124A8004124E9A376071E9D2A50E3FCACDAB12D3591948CE89F5561B052DE0",
-      "bytes": 3914
+      "sha256": "C472C512647EC4641B47C8F90F48FA94C60A3BC4E7B0A8A8EE31A7DD895AE8B1",
+      "bytes": 4569
+    },
+    {
+      "path": "scripts/audit_contract.py",
+      "sha256": "7B3759449B9997F6E384110B98746D8E53E4EDF4FC55D3D4FE7FE01EC98A680B",
+      "bytes": 17093
+    },
+    {
+      "path": "scripts/pdf_text_audit.py",
+      "sha256": "8AD515C54F22732357FFB9F276662922B6072A18A53B10ECFB020F3B5C0D7781",
+      "bytes": 6714
+    },
+    {
+      "path": "references/论文与交付/交付审计.md",
+      "sha256": "AEF50E4CFFAE5E0B2587F2783A74293168CEEECDA321DF36B34BAA4D8A3F03C5",
+      "bytes": 5636
     }
   ],
   "validation": {
@@ -293,12 +308,59 @@
   },
   "source_repository_access": "Private historical baseline; this public package is self-contained and does not grant access to the original repository.",
   "publication_revision": {
-    "date": "2026-09-20",
+    "date": "2026-10-20",
     "corrections": [
       {
         "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
         "reason": "Repair one mathematical index that the earlier path-redaction step incorrectly replaced; derive the bound directly from the surrounding all-i condition, without loading private source material."
       }
-    ]
+    ],
+    "version": "1.1.0",
+    "synchronization": {
+      "date": "2026-10-20",
+      "source_state": "Reviewed working-tree files, not a new private repository commit.",
+      "records": [
+        {
+          "path": "references/通用规范/00E_选模与验证设计门禁.md",
+          "source_sha256": "89f82010379300385c9dd00899240544a0da023192e4d52f8f872c8031b1b8b7",
+          "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+        },
+        {
+          "path": "references/通用规范/00Q_永久质量核心.md",
+          "source_sha256": "4323130ddf4b2d14f8084ea87e161e38ca7971714f70c9cd22992ad50819e118",
+          "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+        },
+        {
+          "path": "references/模型审查/11_验证敏感性与不确定性.md",
+          "source_sha256": "02a9a1806b2cb5f478106156a6973d713978fb6d884a2355fc950f51d4a38ccd",
+          "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+        },
+        {
+          "path": "references/论文与交付/12_论文写作与可视化.md",
+          "source_sha256": "b7cb93e550818212e5421ff87d096f909e44bdb2f293965ef1988135b1b94ff9",
+          "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+        },
+        {
+          "path": "references/论文与交付/13_竞赛工作流与检查清单.md",
+          "source_sha256": "d6f640747fab489e35c8ca539810b76b637996ed845047e7fbb1064e070181f6",
+          "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+        },
+        {
+          "path": "references/模型审查/15_代码与实验规范.md",
+          "source_sha256": "80390c4dc597018d216bee430ae4f8fca35832ceb6132d8ec5f6c1e2fb48d62e",
+          "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+        },
+        {
+          "path": "scripts/audit_contract.py",
+          "source_sha256": "7b3759449b9997f6e384110b98746d8e53e4edf4fc55d3d4fe7fe01ec98a680b",
+          "adaptation": "Reviewed standalone read-only utility; unchanged source."
+        },
+        {
+          "path": "scripts/pdf_text_audit.py",
+          "source_sha256": "8ad515c54f22732357ffb9f276662922b6072a18a53b10ecfb020f3b5c0d7781",
+          "adaptation": "Reviewed standalone read-only utility; unchanged source."
+        }
+      ]
+    }
   }
 }

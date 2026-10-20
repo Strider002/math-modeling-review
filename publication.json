@@ -3,8 +3,8 @@
   "repository": "math-modeling-review",
   "title": "数学建模审查与论文图表",
   "description": "只读审查已有模型、代码、结果与论文，根据模型、任务和主张规划论文需要的图与表，明确证据缺口与补充动作。",
-  "version": "1.0.0",
-  "prepared": "2026-09-20",
+  "version": "1.1.0",
+  "prepared": "2026-10-20",
   "corrections": [
     {
       "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
@@ -46,7 +46,7 @@
     },
     {
       "path": "references/审查导航.md",
-      "sha256": "b663daced76eedd391e8853d395dda1c570daab095aac23ac6f4b8108477bc0c"
+      "sha256": "acc64378cf4df304a687ba0dd8d64e7f869295117f619e87985a705da15685ac"
     },
     {
       "path": "references/来源依据/图表指南来源.md",
@@ -110,7 +110,7 @@
     },
     {
       "path": "references/来源依据/构建信息.json",
-      "sha256": "5ac637ddd71adaa995844a8d695ec69abe2b354a582d6f5278265ad02be02860"
+      "sha256": "f9930a66cfac3d616d6bf4fc9bae3ea1cdfa58ba4cf74381e702e95f14ded986"
     },
     {
       "path": "references/来源依据/证据注册/claims_registry.json",
@@ -126,7 +126,7 @@
     },
     {
       "path": "references/模型审查/11_验证敏感性与不确定性.md",
-      "sha256": "73edae1d6495393d7017d2ef7e376c1c6bd37e131ee22cf2d1854e20b6a1819b"
+      "sha256": "dd9ffb79699e2d1fe237b740a9329e7884494d645953949f311ff7595c1bf697"
     },
     {
       "path": "references/模型审查/14_公式与指标速查.md",
@@ -134,7 +134,7 @@
     },
     {
       "path": "references/模型审查/15_代码与实验规范.md",
-      "sha256": "d021c5a03b761b8deeee30008b39b51dcc5e70f78a7936dccaaad188a071d614"
+      "sha256": "1635231862fb32b7aa3cc73b93ce1751235f0c60772225bf1560cf996b10e331"
     },
     {
       "path": "references/模型审查/24_机器学习评审标准.md",
@@ -150,15 +150,19 @@
     },
     {
       "path": "references/论文与交付/12_论文写作与可视化.md",
-      "sha256": "d26bf7db2be6be5149014c3b82300d45ca51c1bc6b9e6a5522299f54be149288"
+      "sha256": "9b2875c2fc78fd9dd54c8e8d23192c86019b44c30afe610b322b28669ff6a223"
     },
     {
       "path": "references/论文与交付/13_竞赛工作流与检查清单.md",
-      "sha256": "a9277a3cc449234faaf1f2f9af98864037fad6b17c35f40cbc327ad4bfcf59ca"
+      "sha256": "4b227ecedcb50f8a56771f0aa1477baeaddbdcbeb72c6c0c0a96e99214b7b83d"
+    },
+    {
+      "path": "references/论文与交付/交付审计.md",
+      "sha256": "aef50e4cffae5e0b2587f2783a74293168ceeecda321df36b34baa4d8a3f03c5"
     },
     {
       "path": "references/论文与交付/交付检查.md",
-      "sha256": "1535d0bcd98c064a67cf9c7b66141079969b72c3822020cf4b476f5b34ad18a4"
+      "sha256": "730ebc0cee86f26ac5b4997f57bfd1ec1ffc322a69d6aca1ae3cc08d9d7a0cc4"
     },
     {
       "path": "references/论文与交付/竞赛规则核对.md",
@@ -206,11 +210,19 @@
     },
     {
       "path": "references/通用规范/00E_选模与验证设计门禁.md",
-      "sha256": "bb45318fecdb1a9362e4770609ca22b02bdd00a3b273162904d68aa1e5800992"
+      "sha256": "f64a7b5f5c0e7ce8ea8dcf6c752c4acd1f713fed3621219bdcf02973c79b1fda"
     },
     {
       "path": "references/通用规范/00Q_永久质量核心.md",
-      "sha256": "8ef9936c95820ac80f6f040eaca64aae40058d50dc880dc78fb39546a06b507c"
+      "sha256": "daa9ff15c7740ae873f3836aab42e270826c51fbae73f42d5114fb8e3c1bf4a2"
+    },
+    {
+      "path": "scripts/audit_contract.py",
+      "sha256": "7b3759449b9997f6e384110b98746d8e53e4edf4fc55d3d4fe7fe01ec98a680b"
+    },
+    {
+      "path": "scripts/pdf_text_audit.py",
+      "sha256": "8ad515c54f22732357ffb9f276662922b6072a18a53b10ecfb020f3b5c0d7781"
     },
     {
       "path": "scripts/project_paths.ps1",
@@ -226,11 +238,57 @@
     },
     {
       "path": "scripts/verify_results.ps1",
-      "sha256": "6e3b464d00e998dcfc2d721c8fb4d851b374d2577e6543bf16177afc17bd0498"
+      "sha256": "f0f7a0ab9e371bbd9821624ac3c24bd8feabaafbddb8a158daea2adaef542a14"
     },
     {
       "path": "SKILL.md",
-      "sha256": "a8124a8004124e9a376071e9d2a50e3fcacdab12d3591948ce89f5561b052de0"
+      "sha256": "c472c512647ec4641b47c8f90f48fa94c60a3bc4e7b0a8a8ee31a7dd895ae8b1"
     }
-  ]
+  ],
+  "sync": {
+    "date": "2026-10-20",
+    "source_state": "Reviewed working-tree files, not a new private repository commit.",
+    "records": [
+      {
+        "path": "references/通用规范/00E_选模与验证设计门禁.md",
+        "source_sha256": "89f82010379300385c9dd00899240544a0da023192e4d52f8f872c8031b1b8b7",
+        "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+      },
+      {
+        "path": "references/通用规范/00Q_永久质量核心.md",
+        "source_sha256": "4323130ddf4b2d14f8084ea87e161e38ca7971714f70c9cd22992ad50819e118",
+        "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+      },
+      {
+        "path": "references/模型审查/11_验证敏感性与不确定性.md",
+        "source_sha256": "02a9a1806b2cb5f478106156a6973d713978fb6d884a2355fc950f51d4a38ccd",
+        "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+      },
+      {
+        "path": "references/论文与交付/12_论文写作与可视化.md",
+        "source_sha256": "b7cb93e550818212e5421ff87d096f909e44bdb2f293965ef1988135b1b94ff9",
+        "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+      },
+      {
+        "path": "references/论文与交付/13_竞赛工作流与检查清单.md",
+        "source_sha256": "d6f640747fab489e35c8ca539810b76b637996ed845047e7fbb1064e070181f6",
+        "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+      },
+      {
+        "path": "references/模型审查/15_代码与实验规范.md",
+        "source_sha256": "80390c4dc597018d216bee430ae4f8fca35832ceb6132d8ec5f6c1e2fb48d62e",
+        "adaptation": "Reviewed generic changes with package-relative references; restricted sections are not included."
+      },
+      {
+        "path": "scripts/audit_contract.py",
+        "source_sha256": "7b3759449b9997f6e384110b98746d8e53e4edf4fc55d3d4fe7fe01ec98a680b",
+        "adaptation": "Reviewed standalone read-only utility; unchanged source."
+      },
+      {
+        "path": "scripts/pdf_text_audit.py",
+        "source_sha256": "8ad515c54f22732357ffb9f276662922b6072a18a53b10ecfb020f3b5c0d7781",
+        "adaptation": "Reviewed standalone read-only utility; unchanged source."
+      }
+    ]
+  }
 }
