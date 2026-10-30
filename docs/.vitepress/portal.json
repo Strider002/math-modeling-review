@@ -1,8 +1,8 @@
 {
-  "version": "1.1.0",
+  "version": "2.0.1",
   "owner": "Strider002",
   "origin": "https://strider002.github.io",
-  "brand": "Math Modeling Skills",
+  "brand": "数学建模手册",
   "sites": [
     {
       "id": "math-modeling-library",
@@ -21,12 +21,12 @@
   ],
   "nav": [
     {
-      "text": "建模方法库",
+      "text": "卷一 · 建模方法",
       "site": "math-modeling-library",
       "path": "/"
     },
     {
-      "text": "审查与图表",
+      "text": "卷二 · 审查图表",
       "site": "math-modeling-review",
       "path": "/"
     },
@@ -53,10 +53,10 @@
   ],
   "sidebar": [
     {
-      "text": "建模方法库",
+      "text": "卷一 · 建模方法",
       "items": [
         {
-          "text": "概览与开始",
+          "text": "方法选择与阅读起点",
           "site": "math-modeling-library",
           "path": "/"
         },
@@ -83,10 +83,10 @@
       ]
     },
     {
-      "text": "审查与论文图表",
+      "text": "卷二 · 审查与图表",
       "items": [
         {
-          "text": "概览与开始",
+          "text": "按任务开始审查",
           "site": "math-modeling-review",
           "path": "/"
         },

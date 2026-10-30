@@ -1,0 +1,47 @@
+{
+  "kind": "original_synthetic_counterexample",
+  "units": "dimensionless",
+  "labels": [
+    "0",
+    "1",
+    "2"
+  ],
+  "predictions": {
+    "A": [
+      "0",
+      "8/5",
+      "7/5"
+    ],
+    "B": [
+      "0",
+      "0",
+      "29/10"
+    ]
+  },
+  "results": {
+    "A": {
+      "mse": "6/25",
+      "selected_index": 1,
+      "selected_value": "1",
+      "regret": "1"
+    },
+    "B": {
+      "mse": "181/300",
+      "selected_index": 2,
+      "selected_value": "2",
+      "regret": "0"
+    }
+  },
+  "checks": {
+    "manual_mse": true,
+    "smaller_error_worse_selection": true,
+    "manual_selection": true,
+    "all_six_joint_permutations": true,
+    "translation_invariance": true,
+    "positive_scaling": true,
+    "perfect_predictions": true,
+    "invalid_and_tied_inputs_rejected": true
+  },
+  "upstream_rankreg_executed": false,
+  "script_sha256": "24e34e10cf29da07528d80911b5da046f9437f96f88394dda09b2a67f8a1f3f4"
+}

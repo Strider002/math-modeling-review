@@ -308,14 +308,14 @@
   },
   "source_repository_access": "Private historical baseline; this public package is self-contained and does not grant access to the original repository.",
   "publication_revision": {
-    "date": "2026-10-20",
+    "date": "2026-10-30",
     "corrections": [
       {
         "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
         "reason": "Repair one mathematical index that the earlier path-redaction step incorrectly replaced; derive the bound directly from the surrounding all-i condition, without loading private source material."
       }
     ],
-    "version": "1.1.0",
+    "version": "2.0.1",
     "synchronization": {
       "date": "2026-10-20",
       "source_state": "Reviewed working-tree files, not a new private repository commit.",

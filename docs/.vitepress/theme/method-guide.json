@@ -1,0 +1,169 @@
+{
+  "review": true,
+  "chapters": [
+    {
+      "id": "prediction",
+      "label": "预测与回归",
+      "branches": {
+        "table": {
+          "title": "从响应变量与数据结构开始",
+          "note": "先看轻量选模入口，明确要预测什么，再考虑是否需要非线性方法。",
+          "check": "响应的取值范围、独立单位、简单基线与训练外划分。",
+          "links": [
+            {
+              "label": "回归方法与选择条件",
+              "href": "/content/p-37af6c14d96c1573.html"
+            },
+            {
+              "label": "验证、误差与不确定性",
+              "href": "/content/p-ca947319601d406b.html"
+            }
+          ]
+        },
+        "time": {
+          "title": "时间顺序决定验证方式",
+          "note": "先明确预测期与当时可用信息，再阅读时序方法。",
+          "check": "未来信息是否进入训练；基线与候选是否按相同时间窗口评价。",
+          "links": [
+            {
+              "label": "预测与时间序列",
+              "href": "/content/p-fc835dda633b2d8f.html"
+            },
+            {
+              "label": "验证与不确定性",
+              "href": "/content/p-ca947319601d406b.html"
+            }
+          ]
+        },
+        "discrete": {
+          "title": "先确认响应支持集",
+          "note": "类别、计数和比例不能默认使用同一套连续回归解释。",
+          "check": "标签含义、边界、样本依赖，以及与目标匹配的指标。",
+          "links": [
+            {
+              "label": "线性模型、广义线性模型与分支选择",
+              "href": "/content/p-37af6c14d96c1573.html"
+            },
+            {
+              "label": "机器学习验证与审查",
+              "href": "/content/p-46ff89c4fe084c7e.html"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "optimization",
+      "label": "约束与优化",
+      "title": "先写清目标与约束",
+      "note": "把决策变量、可行域和目标放在算法前面。",
+      "check": "是否满足全部约束；数值解是否有最优性证据。",
+      "links": [
+        {
+          "label": "优化模型与求解依据",
+          "href": "/content/p-9f3de16b2686669f.html"
+        },
+        {
+          "label": "验证与压力检查",
+          "href": "/content/p-ca947319601d406b.html"
+        }
+      ]
+    },
+    {
+      "id": "evaluation",
+      "label": "评价与决策",
+      "title": "先定义评价的对象与用途",
+      "note": "指标和权重的含义应能解释最终排序。",
+      "check": "方向、量纲、权重依据及排名对假设的敏感程度。",
+      "links": [
+        {
+          "label": "评价与多元统计依据",
+          "href": "/content/p-31cd05cb3193011d.html"
+        },
+        {
+          "label": "敏感性与稳定性",
+          "href": "/content/p-ae2ca648c2127e05.html"
+        }
+      ]
+    },
+    {
+      "id": "clustering",
+      "label": "聚类与降维",
+      "title": "先区分发现分组与压缩信息",
+      "note": "聚类与降维回答不同问题，不把投影图当作分组真值。",
+      "check": "距离与尺度、分组稳定性、降维后的信息损失。",
+      "links": [
+        {
+          "label": "聚类的条件与验证",
+          "href": "/content/p-3605fba8fddbbb0e.html"
+        },
+        {
+          "label": "主成分与降维",
+          "href": "/content/p-0dcdacfa64354ef4.html"
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "label": "机理与仿真",
+      "title": "从变量与现实机制建立联系",
+      "note": "说明状态、变化规则和假设，再检查数值实现。",
+      "check": "单位、初始条件、守恒或边界，以及参数来源。",
+      "links": [
+        {
+          "label": "机理建模与仿真依据",
+          "href": "/content/p-635b22411012c6d5.html"
+        },
+        {
+          "label": "验证与不确定性",
+          "href": "/content/p-ca947319601d406b.html"
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "解释与交付",
+      "title": "让每一个结论回到证据",
+      "note": "按问题组织结果、解释与局限，图表用于支持明确主张。",
+      "check": "逐问覆盖、数字一致、英文含义与图文关系。",
+      "links": [
+        {
+          "label": "论文写作与交付审查",
+          "href": "/content/p-84677ca0f87a114b.html"
+        },
+        {
+          "label": "实现与结果追溯",
+          "href": "/content/p-53dd1c432625c789.html"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    {
+      "label": "科学审查与验证",
+      "href": "/catalog.html#audit",
+      "note": "按模型核对假设、划分与证据。"
+    },
+    {
+      "label": "模型与论文图表",
+      "href": "/figures.html",
+      "note": "从主张选择图种，核对字段与适用条件。"
+    },
+    {
+      "label": "论文表达与交付",
+      "href": "/catalog.html#delivery",
+      "note": "检查逐问闭环、数字和论证。"
+    },
+    {
+      "label": "前沿算法候选",
+      "href": "/catalog.html#frontier",
+      "note": "新方法的来源、必要性与待验证边界。"
+    },
+    {
+      "label": "完整资源目录",
+      "href": "/catalog.html",
+      "note": "按章节检索全部方法、规范与工具。"
+    }
+  ],
+  "other": "https://strider002.github.io/math-modeling-library/"
+}

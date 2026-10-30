@@ -19,15 +19,16 @@ export default defineConfig({
   description: site.description,
   base,
   cleanUrls: false,
+  appearance: false,
   lastUpdated: false,
-  head: [['meta', { name: 'theme-color', content: '#216c65' }]],
+  head: [['meta', { name: 'theme-color', content: '#ffffff' }]],
   markdown: {
     math: true,
     lineNumbers: false,
     config(md) { md.set({ html: false }) }
   },
   themeConfig: {
-    siteTitle: 'Math Modeling Skills',
+    siteTitle: '数学建模手册',
     nav: portal.nav.map(item),
     sidebar: portal.sidebar.map(item),
     outline: { level: [2, 3], label: '本页目录' },

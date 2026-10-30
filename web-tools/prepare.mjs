@@ -39,6 +39,7 @@ const sections = release.name === 'math-modeling-library' ? [
   ['figures', '模型与论文图表', item => item.path.includes('/论文图表/')],
   ['delivery', '论文表达、交付与反例', item => /论文与交付|案例反例/.test(item.path)],
   ['standards', '任务入口', item => /SKILL.md|AGENTS.md|审查导航/.test(item.path)],
+  ['frontier', '前沿算法候选', item => item.path.startsWith('前沿算法/')],
   ['sources', '方法依据、来源与许可', item => /来源依据|LICENSE/.test(item.path)],
   ['tools', '工具与模板', item => /^(scripts|assets|agents)\//.test(item.path)]
 ]

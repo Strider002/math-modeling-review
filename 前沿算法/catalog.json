@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-29",
+  "entries": [
+    {
+      "repository": "Rockou/MFTabPFN",
+      "doi": "10.1038/s41467-026-75163-w",
+      "published_date": "2026-07-04",
+      "card": "MFTabPFN_多保真回归.md",
+      "commit": "34bee8546c804b727d01a5239b5db48796bbd8ea",
+      "license": "Apache-2.0",
+      "reviewed_files": [
+        {
+          "path": "README.md",
+          "sha256": "4278fc2118bdcbf0170452f13fac4289888fb6afa33af44d74999ab35d91c45c"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "requirements1.txt",
+          "sha256": "9e129b3dd93bd84190cee1c841d58b56e6e0f80fe28595a6f868b20b298d199c"
+        }
+      ],
+      "status": "案例线索",
+      "metadata_status": "已核验",
+      "runtime_reproduction": "未执行",
+      "target_task_validation": "未执行",
+      "cas_partition": {
+        "status": "待核验",
+        "year": null,
+        "category_scope": null
+      },
+      "verified_at": "2026-10-28",
+      "review_due": "2026-11-28"
+    },
+    {
+      "repository": "zyan-y/REAP",
+      "doi": "10.1038/s41467-026-76264-2",
+      "published_date": null,
+      "card": "RankReg_排序与回归.md",
+      "commit": "96c69e94b3b39c33ffb70ac394bd06022b4f035f",
+      "license": "AGPL-3.0",
+      "reviewed_files": [
+        {
+          "path": "README.md",
+          "sha256": "a9525a54b70303d0737e8bf5b958325a56d04bbaf4a33c8bbd9ac65af3fd3e5d"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "3baeb3241dbdacbb340d7c96fc680cd3266f23e01ad7c633eb9c1baca160c41e"
+        },
+        {
+          "path": "src/reap/losses.py",
+          "sha256": "fd5f8ba9c8f8131c4f2a2a403b656cb3e92bd97149c46544c39080db98d3bbb5"
+        }
+      ],
+      "status": "案例线索",
+      "metadata_status": "已核验",
+      "runtime_reproduction": "未执行",
+      "target_task_validation": "未执行",
+      "cas_partition": {
+        "status": "待核验",
+        "year": null,
+        "category_scope": null
+      },
+      "verified_at": "2026-10-28",
+      "review_due": "2026-11-28"
+    },
+    {
+      "repository": "mouatadid/pbc",
+      "doi": "10.1038/s41586-026-11126-x",
+      "published_date": "2026-10-14",
+      "card": "近期论文追踪.md",
+      "commit": "d59e18f720bac712e18563bd469d4679c120f9e5",
+      "license": "MIT",
+      "reviewed_files": [
+        {
+          "path": "README.md",
+          "sha256": "ffac83835a152071a8e7ebf6a059f61eda0a1b1301652544f42415761c433a71"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a25a0753dde4161ecade1d98a9f733a20728c19d54139dfc5c20e964c9ee99b9"
+        },
+        {
+          "path": "src/setup/environment-aiwqd.yml",
+          "sha256": "1a1e7ef31ca4584f1c2f0bd304eec6e4589fd908f092c57f452af72e0a643adb"
+        },
+        {
+          "path": "src/models/projector/batch_predict.py",
+          "sha256": "06d72e92c91659d4555b7dd22b90d127d72d54d9788da20fd14d247611c90b9c"
+        },
+        {
+          "path": "src/models/climatology/batch_predict.py",
+          "sha256": "4cfbbb2650d4d89e29ee0d09559198b772b995f387eae2843c3e42acbdf5214e"
+        },
+        {
+          "path": "src/models/pbc_ecmwf/bulk_batch_predict.py",
+          "sha256": "8fa11682cebd22a84e94923ee9d6858751f47a7fba9e53afb1e24bd2c1e8fac4"
+        }
+      ],
+      "status": "案例线索",
+      "metadata_status": "已核验",
+      "runtime_reproduction": "未执行",
+      "target_task_validation": "未执行",
+      "cas_partition": {
+        "status": "待核验",
+        "year": null,
+        "category_scope": null
+      },
+      "verified_at": "2026-10-29",
+      "review_due": "2026-11-29"
+    }
+  ]
+}
