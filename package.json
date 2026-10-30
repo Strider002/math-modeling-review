@@ -23,7 +23,7 @@
   },
   "overrides": {
     "source-map-js": "1.2.2",
-    "vite": "6.4.3",
+    "vite": "6.4.5",
     "@xmldom/xmldom": "0.9.12"
   }
 }
