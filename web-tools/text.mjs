@@ -4,6 +4,8 @@ import path from 'node:path'
 export const sha256 = value => createHash('sha256').update(value).digest('hex')
 export const pageId = file => `p-${createHash('sha256').update(file).digest('hex').slice(0, 16)}`
 export const pageLink = file => `/content/${pageId(file)}.html`
+export const isMedia = file => /\.(?:png|svg|pdf)$/i.test(file)
+export const mediaLink = file => `/media/${pageId(file)}${path.posix.extname(file).toLowerCase()}`
 export const pageFile = file => `content/${pageId(file)}.md`
 export const titleOf = (content, file) => content.match(/^#\s+(.+)$/m)?.[1].trim() || path.posix.basename(file)
 
@@ -45,11 +47,13 @@ export function adaptMarkdown(content, file, approved) {
     .replaceAll('\\[', () => '$$').replaceAll('\\]', () => '$$')
     .replaceAll('\\(', '$').replaceAll('\\)', '$')
     .replace(/\{\{([^{}\n]+)\}\}/g, '&#123;&#123;$1&#125;&#125;')
-    .replace(/\[([^\]\n]+)\]\(([^)\n]+)\)/g, (original, label, destination) => {
+    .replace(/(!?)\[([^\]\n]+)\]\(([^)\n]+)\)/g, (original, image, label, destination) => {
       if (/^(https?:|mailto:|#)/i.test(destination)) return original
       const [rawPath, fragment] = destination.replace(/^<|>$/g, '').split('#')
       const resolved = path.posix.normalize(path.posix.join(path.posix.dirname(file), decodeURIComponent(rawPath.replaceAll('\\', '/'))))
       if (!approved.has(resolved)) throw new Error(`Unapproved link in ${file}: ${resolved}`)
+      if (image && !/\.(?:png|svg)$/i.test(resolved)) throw new Error(`Invalid embedded image in ${file}: ${resolved}`)
+      if (isMedia(resolved)) return `${image}[${label}](${mediaLink(resolved)})`
       // Source files use several legacy heading-anchor conventions; link to the
       // checked destination page and let its generated outline provide section links.
       return `[${label}](${pageLink(resolved)})`

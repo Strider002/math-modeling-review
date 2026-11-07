@@ -13,3 +13,4 @@ docs/.vitepress/cache/
 !.env.example
 .DS_Store
 Thumbs.db
+docs/public/media/

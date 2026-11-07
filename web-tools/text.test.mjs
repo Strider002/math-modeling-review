@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { adaptMarkdown, figureRows, pageId, pageLink, tokenize } from './text.mjs'
+import { adaptMarkdown, figureRows, mediaLink, pageId, pageLink, tokenize } from './text.mjs'
 import { approvedFiles, safeFile } from './files.mjs'
 
 test('Chinese phrases and English model names are searchable', () => {
@@ -45,4 +45,19 @@ test('figure rows are derived from the approved master table', () => {
   assert.equal(rows[0].model, 'OLS')
   assert.equal(rows[0].link, pageLink('guides/a.md'))
   assert.throws(() => figureRows(source, 'guides', new Set()))
+})
+
+test('approved figures retain image semantics and use direct media URLs', () => {
+  const allowed = new Set(['figures/chart.svg', 'figures/chart.png', 'figures/chart.pdf'])
+  for (const file of ['chart.svg', 'chart.png']) {
+    assert.equal(adaptMarkdown(`![Readable alt](../figures/${file})`, 'a/readme.md', allowed),
+      `![Readable alt](${mediaLink(`figures/${file}`)})`)
+  }
+  assert.equal(adaptMarkdown('[PDF](../figures/chart.pdf)', 'a/readme.md', allowed),
+    `[PDF](${mediaLink('figures/chart.pdf')})`)
+})
+test('image syntax cannot bypass approval or embed a non-image resource', () => {
+  assert.throws(() => adaptMarkdown('![x](private.png)', 'a.md', new Set()))
+  assert.throws(() => adaptMarkdown('![x](scores.json)', 'a.md', new Set(['scores.json'])))
+  assert.throws(() => adaptMarkdown('![x](plot.pdf)', 'a.md', new Set(['plot.pdf'])))
 })

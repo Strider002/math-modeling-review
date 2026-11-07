@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 import { withBase } from 'vitepress'
 import guide from './method-guide.json'
+import portal from '../portal.json'
 const selected = ref(guide.chapters[0].id)
 const branch = ref('table')
 const chapter = computed(() => guide.chapters.find(c => c.id === selected.value))
@@ -11,7 +12,7 @@ const choices = [{id:'table',label:'连续数值 / 表格'},{id:'time',label:'�
 
 <template>
   <div class="book-home-content">
-    <div class="book-edition"><span>数学建模 · 开放手册</span><span>第二版 / v2.0.1</span></div>
+    <div class="book-edition"><span>数学建模 · 开放手册</span><span>第二版 / v{{ portal.version }}</span></div>
     <header class="book-intro">
       <p class="book-volume">{{ guide.review ? '卷二 · 审查与论文图表' : '卷一 · 建模方法' }}</p>
       <h1>{{ guide.review ? '让方法与证据相互对应。' : '从问题出发，找到合适的方法。' }}</h1>
@@ -37,6 +38,6 @@ const choices = [{id:'table',label:'连续数值 / 表格'},{id:'time',label:'�
       <div class="chapter-heading"><span>02</span><h2 id="contents-title">按章节翻阅</h2></div>
       <div class="contents-list"><a v-for="(c,i) in guide.contents" :key="c.href" :href="withBase(c.href)"><span class="contents-number">{{ String(i+1).padStart(2,'0') }}</span><span><strong>{{ c.label }}</strong><small>{{ c.note }}</small></span><span aria-hidden="true">↗</span></a></div>
     </section>
-    <aside class="book-colophon"><p>阅读、比较、验证，再写下结论。</p><div><a :href="withBase('/guide.html')">使用说明</a><span>·</span><a :href="withBase('/download.html')">下载 v2.0.1</a><span>·</span><a :href="guide.other">{{ guide.review ? '卷一 · 建模方法' : '卷二 · 审查与图表' }} ↗</a></div></aside>
+    <aside class="book-colophon"><p>阅读、比较、验证，再写下结论。</p><div><a :href="withBase('/guide.html')">使用说明</a><span>·</span><a :href="withBase('/download.html')">下载 v{{ portal.version }}</a><span>·</span><a :href="guide.other">{{ guide.review ? '卷一 · 建模方法' : '卷二 · 审查与图表' }} ↗</a></div></aside>
   </div>
 </template>

@@ -2,15 +2,18 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { zipSync } from 'fflate'
 import { approvedFiles, release, root, safeFile, walk, writeGenerated } from './files.mjs'
-import { adaptMarkdown, figureRows, pageFile, pageLink, sha256, titleOf } from './text.mjs'
+import { adaptMarkdown, figureRows, isMedia, mediaLink, pageFile, pageLink, sha256, titleOf } from './text.mjs'
 
-const files = approvedFiles()
+// Numeric chapter prefixes, with the base chapter before its lettered appendix.
+const chapterKey = file => file.replace(/(^|\/)(\d+)([A-Z]*)_/g,
+  (_, slash, number, suffix) => `${slash}${number.padStart(5, '0')}!${suffix}!`)
+const files = approvedFiles().sort((a, b) => chapterKey(a.path).localeCompare(chapterKey(b.path), 'zh-CN'))
 const approved = new Set(files.map(file => file.path))
 const catalog = files.map(file => ({ path: file.path, title: titleOf(file.text, file.path), link: pageLink(file.path) }))
 
 // Only generated files in these two fixed, checked directories are replaceable.
 let removed = 0
-for (const directory of ['docs/content', 'docs/public/downloads']) {
+for (const directory of ['docs/content', 'docs/public/downloads', 'docs/public/media']) {
   for (const file of walk(directory)) {
     fs.unlinkSync(safeFile(file, true))
     removed++
@@ -19,8 +22,10 @@ for (const directory of ['docs/content', 'docs/public/downloads']) {
 
 for (const file of files) {
   const isMarkdown = file.path.endsWith('.md')
+  const media = isMedia(file.path)
+  if (media) writeGenerated(`docs/public${mediaLink(file.path)}`, file.data)
   const language = ({ '.ps1': 'powershell', '.json': 'json', '.yaml': 'yaml' })[path.extname(file.path)] || 'text'
-  const content = isMarkdown ? adaptMarkdown(file.text, file.path, approved)
+  const content = media ? `# ${path.posix.basename(file.path)}\n\n${/\.(png|svg)$/i.test(file.path) ? `![${path.posix.basename(file.path)}](${mediaLink(file.path)})\n\n` : ''}[下载原始文件](${mediaLink(file.path)})\n` : isMarkdown ? adaptMarkdown(file.text, file.path, approved)
     : `# ${titleOf(file.text, file.path)}\n\n以下为公开包中的原始资源。\n\n\`\`\`\`\`\`${language}\n${file.text}\n\`\`\`\`\`\`\n`
   const source = `https://github.com/Strider002/${release.repository}/blob/main/${file.path.split('/').map(encodeURIComponent).join('/')}`
   const metadata = `---\ntitle: ${JSON.stringify(titleOf(file.text, file.path))}\n---\n\n`
@@ -31,14 +36,14 @@ const sections = release.name === 'math-modeling-library' ? [
   ['foundation', '问题、数据与基础方法', item => item.path.includes('/基础方法/')],
   ['advanced', '进阶模型与方法卡', item => item.path.includes('/进阶方法/')],
   ['delivery', '验证、交付与案例', item => /竞赛论文|项目经验|工程工具|竞赛规则/.test(item.path)],
-  ['standards', '规范与任务入口', item => /规范\/|SKILL.md|AGENTS.md|阅读导航|公开版维护/.test(item.path)],
+  ['standards', '规范与任务入口', item => item.path === 'references/README.md' || ['references/README.md', 'references/知识库/README.md'].includes(item.path) || /规范\/|SKILL.md|AGENTS.md|阅读导航|公开版维护/.test(item.path)],
   ['sources', '来源与许可', item => /来源依据|LICENSE/.test(item.path)],
   ['tools', '工具与模板', item => /^(scripts|assets|agents)\//.test(item.path) || item.path === 'routing-manifest.yaml']
 ] : [
   ['audit', '科学审查与验证', item => /模型审查|通用规范/.test(item.path)],
   ['figures', '模型与论文图表', item => item.path.includes('/论文图表/')],
   ['delivery', '论文表达、交付与反例', item => /论文与交付|案例反例/.test(item.path)],
-  ['standards', '任务入口', item => /SKILL.md|AGENTS.md|审查导航/.test(item.path)],
+  ['standards', '任务入口', item => item.path === 'references/README.md' || /SKILL.md|AGENTS.md|审查导航/.test(item.path)],
   ['frontier', '前沿算法候选', item => item.path.startsWith('前沿算法/')],
   ['sources', '方法依据、来源与许可', item => /来源依据|LICENSE/.test(item.path)],
   ['tools', '工具与模板', item => /^(scripts|assets|agents)\//.test(item.path)]

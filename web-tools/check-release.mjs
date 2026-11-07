@@ -23,7 +23,8 @@ if (fs.existsSync(`${root}/.git`)) {
   const exact = new Set([...release.files.map(f => f.path), 'README.md', 'CHANGELOG.md', 'publication.json', 'package.json', 'package-lock.json', '.gitignore', '.gitattributes'])
   for (const file of tracked) {
     if (!exact.has(file) && !/^(docs\/(?:\.vitepress\/|index\.md$|guide\.md$|about\.md$|figures\.md$)|web-tools\/|\.github\/workflows\/)/.test(file)) throw new Error(`Unapproved tracked file: ${file}`)
-    if (/node_modules|\/dist\/|\.env(?:\.|$)|\.(?:pdf|xlsx|csv|docx|png|jpg|zip)$/i.test(file)) throw new Error(`Unexpected tracked artifact: ${file}`)
+    const approvedOriginalFigure = exact.has(file) && /^前沿算法\/评价目标反例\/metric-tradeoff(?:-gray)?\.(?:png|svg|pdf)$/.test(file)
+    if (/node_modules|\/dist\/|\.env(?:\.|$)|\.(?:pdf|xlsx|csv|docx|png|jpg|zip)$/i.test(file) && !approvedOriginalFigure) throw new Error(`Unexpected tracked artifact: ${file}`)
     if (secretPatterns.some(re => re.test(fs.readFileSync(`${root}/${file}`, 'utf8')))) throw new Error(`Potential private information in website source: ${file}`)
   }
   console.log(`Tracked file boundary checked: ${tracked.length}`)

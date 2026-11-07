@@ -1,5 +1,14 @@
 # MFTabPFN：多保真回归候选
 
+## 选用摘要
+
+| 项目 | 本卡要点 |
+|---|---|
+| 问题 | 不同精度的数据能否改善高精度目标预测 |
+| 验证链 | 高保真单独回归 → 同对象隔离验证 → 覆盖/成本检查 |
+| 停止条件 | 低保真引入负迁移、层级错配或权重/许可不清时退出 |
+| 证据状态 | 研究候选，未完成算法复现与目标任务验证 |
+
 ## 身份、版本与状态
 
 - 原始论文：[A multi-fidelity tabular prior-data fitted network model for accurate prediction and uncertainty quantification](https://doi.org/10.1038/s41467-026-75163-w)，Nature Communications，2026-07-04。这是 Nature Portfolio 期刊，不是 Nature 主刊；中科院分区年份和大类/小类尚未核验。

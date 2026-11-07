@@ -13,3 +13,5 @@ scripts/** -text
 *.zip binary
 *.png binary
 *.pdf binary
+
+前沿算法/** -text

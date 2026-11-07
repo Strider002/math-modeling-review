@@ -1,5 +1,14 @@
 # RankReg：排序与回归目标的候选连接
 
+## 选用摘要
+
+| 项目 | 本卡要点 |
+|---|---|
+| 问题 | 数值预测与筛选收益是否需要共同优化 |
+| 验证链 | 简单回归 → 固定筛选目标 → 同时报误差与收益 |
+| 停止条件 | 只有排序改善时，不能宣称数值预测或整体表现更好 |
+| 证据状态 | 研究候选，未完成算法复现与目标任务验证 |
+
 ## 身份、版本与状态
 
 - 原始论文：[Rank-guided learning accelerates automated enzyme engineering](https://doi.org/10.1038/s41467-026-76264-2)，Nature Communications，2026 年；精确发表日期待补核。Nature Portfolio 身份与 Nature 主刊分别登记，中科院一区身份待官方分区核验。
@@ -33,10 +42,14 @@ src/reap/losses.py 中 rank_reg_loss 将均方误差与成对损失加权。成�
 
 > The prediction task also requires selecting a small set of candidates. We will therefore compare a ranking-aware loss with pointwise regression under the same validation protocol. Better ranking alone will not be treated as evidence of better numerical prediction.
 
-目前没有本地性能、跨领域泛化或新颖性验证；未制作图像。
+目前没有RankReg本地性能、跨领域泛化或新颖性验证。另有下节所链接原创算例及其图像，证据身份与上游算法分开。
 
 ## 2026-10-30：先验证评价目标是否一致
 
 新增[可运行评价反例](评价目标反例/README.md)：固定三个对象和两个人为预测向量，数值误差与top-1真实收益给出相反偏好。8项精确算术、置换/尺度和边界检查通过，并有可复算结果及英文解释。反例限定在设计输入，不是RankReg复现或训练外性能证据；本轮所检查的Conda环境无PyTorch，未安装依赖或执行上游代码。
 
 方法库据此先把评价目标写清，再做模型选择；审查库要求并列报告误差、筛选收益及比较边界，不能用某一指标的改善替代全部题目要求。原最低验证计划仍未执行。
+
+## 2026-11-07：从评价到论文建议
+
+[评价反例的英文练习](评价目标反例/README.md)已补“任务—结果—条件决策—局限”的结论段及8类语义核对。方法库据此要求先明确预测问和筛选问各自交付什么，再在同一验证协议中比较候选；审查库检查A/B向量是否被误称为训练模型、预测值是否被误作真实收益、单指标优势是否被扩大为总体最优。固定代码、许可与未复现状态沿用上文，不因语言流畅或图表完成升级为主模型。

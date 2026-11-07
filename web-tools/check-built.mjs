@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { unzipSync } from 'fflate'
 import { approvedFiles, release, safeFile, walk } from './files.mjs'
-import { sha256 } from './text.mjs'
+import { isMedia, mediaLink, sha256 } from './text.mjs'
 
 const files = approvedFiles()
 const builtRoot = safeFile('docs/.vitepress/dist')
@@ -28,6 +28,10 @@ for (const file of pages) {
     if (!fs.existsSync(target)) throw new Error(`Broken built link in ${file}: ${href}`)
     links++
   }
+}
+for (const file of files.filter(file => isMedia(file.path))) {
+  const asset = fs.readFileSync(path.join(builtRoot, mediaLink(file.path)))
+  if (sha256(asset) !== file.sha256) throw new Error(`Built media source mismatch: ${file.path}`)
 }
 const archive = fs.readFileSync(path.join(builtRoot, 'downloads', `${release.name}-v${release.version}.zip`))
 const extracted = unzipSync(archive)

@@ -3,8 +3,8 @@
   "repository": "math-modeling-review",
   "title": "数学建模审查与论文图表",
   "description": "只读审查已有模型、代码、结果与论文，根据模型、任务和主张规划论文需要的图与表，明确证据缺口与补充动作。",
-  "version": "2.0.1",
-  "prepared": "2026-10-30",
+  "version": "2.1.0",
+  "prepared": "2026-11-07",
   "corrections": [
     {
       "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
@@ -15,22 +15,6 @@
     {
       "path": "AGENTS.md",
       "sha256": "0fd7235acab099a4b6e79666fc4466c3d4ba56bf729ab3930160ea270e3600ba"
-    },
-    {
-      "path": "agents/openai.yaml",
-      "sha256": "90311f1c179576ff7fb4b3cef08584cfdb8b9745a50694e595558c918c0c1c43"
-    },
-    {
-      "path": "assets/模板/AI工具使用详情模板.md",
-      "sha256": "30c301e36df7f144fd6c9899fe105215f3aee6bce79fe665c55e7e5430d40d3b"
-    },
-    {
-      "path": "assets/模板/模型审查报告模板.md",
-      "sha256": "5bd0c0a9d3cc250f756b92f90214c5cb4b716b4571b8c0ef83ad1236493d6eb1"
-    },
-    {
-      "path": "assets/模板/论文图表清单模板.md",
-      "sha256": "5e3bea932999176cbc44c4ee07eec0f604f1fdc2152ad291c632c4ba7710cafa"
     },
     {
       "path": "LICENSE",
@@ -45,8 +29,40 @@
       "sha256": "954982e668ee48adafff8e6a435e49fa70ec2defac0fc354fec5b4316ee5a6e3"
     },
     {
+      "path": "SKILL.md",
+      "sha256": "0fff88d3f47d1dcfde8cbd0819ac5ab1360b53937b38a7f3ee08c97f7eabdb1d"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "90311f1c179576ff7fb4b3cef08584cfdb8b9745a50694e595558c918c0c1c43"
+    },
+    {
+      "path": "assets/模板/AI工具使用详情模板.md",
+      "sha256": "30c301e36df7f144fd6c9899fe105215f3aee6bce79fe665c55e7e5430d40d3b"
+    },
+    {
+      "path": "assets/模板/README.md",
+      "sha256": "4cf94f890284694369e64ca734d3fd5260175fde82db7dbc889b27ad580d8ca9"
+    },
+    {
+      "path": "assets/模板/模型审查报告模板.md",
+      "sha256": "5bd0c0a9d3cc250f756b92f90214c5cb4b716b4571b8c0ef83ad1236493d6eb1"
+    },
+    {
+      "path": "assets/模板/论文图表清单模板.md",
+      "sha256": "5e3bea932999176cbc44c4ee07eec0f604f1fdc2152ad291c632c4ba7710cafa"
+    },
+    {
+      "path": "references/README.md",
+      "sha256": "f68f6c274d8d77464f510718e977691d3c94f2cd09fa5d6b93ffaf46d2e3bd41"
+    },
+    {
       "path": "references/审查导航.md",
       "sha256": "acc64378cf4df304a687ba0dd8d64e7f869295117f619e87985a705da15685ac"
+    },
+    {
+      "path": "references/来源依据/README.md",
+      "sha256": "99992cdcd1356167ec1c97f56a891a678848330188f46849c6c38f8464c3c2d3"
     },
     {
       "path": "references/来源依据/图表指南来源.md",
@@ -54,51 +70,55 @@
     },
     {
       "path": "references/来源依据/方法依据/25_优化建模进阶.md",
-      "sha256": "f21d0654bd0ba78ffa1c52c6e7132a6fd6d4bad992f94548a18cca04941a817d"
+      "sha256": "2aeffd6784b9cb1ef094345f26a888322bfbfc3203e5341522e11eeff087234f"
     },
     {
       "path": "references/来源依据/方法依据/26_聚类分析严谨方法卡.md",
-      "sha256": "30f7022796113e00cf800bb25f4cd42b7c80004f18a2b8f52e19daa386e91af3"
+      "sha256": "039f0f8dab199fa7223a51020d74a31313da1cc306923d287c9ef6f2ad93a93a"
     },
     {
       "path": "references/来源依据/方法依据/27_主成分分析严谨方法卡.md",
-      "sha256": "1b385d082f64dbf02ade81d251b6001509583795693c28486e742cc072e4dbb6"
+      "sha256": "f414b2c4a33441da33173833eacda19fe6d38a764e0dc35d2afac46581fcc20a"
     },
     {
       "path": "references/来源依据/方法依据/29_线性模型与广义线性模型严谨方法卡.md",
-      "sha256": "69e2804e3018a7d4009b2cdda4dad3c6b0dbad71634013cb3f16cbba787c65bd"
+      "sha256": "5a30d7b0ea540f9986240f473eaee987fd47509fda0597dda59c20fe25f9659d"
     },
     {
       "path": "references/来源依据/方法依据/31_树模型与集成学习严谨方法卡.md",
-      "sha256": "44e39aca15ec6ca98fe7fcbd802a602be5a3f90a1ef68c64cc8ba3beed615908"
+      "sha256": "59af40725db2dd6503000180df8b13b0a0a61b15e899e3790143b0774d229d72"
     },
     {
       "path": "references/来源依据/方法依据/32_神经网络严谨方法卡.md",
-      "sha256": "46241293139c86c01becb585653d3e3dc76ab1080f1a18a1e2d01ae4f89bd7d5"
+      "sha256": "e5b49be9494c66d3321a091b94f7ae2c8c2b0d2694c4a5c387f3ae1fccca8304"
     },
     {
       "path": "references/来源依据/方法依据/33_EM算法与潜变量模型严谨方法卡.md",
-      "sha256": "70b9e8225232f157563ef3b872a50253fd82a000156d73a7e6441acf877cd112"
+      "sha256": "854009f2c37c83ce4c2c0ece8493bd57e58eb907d304afa24f9282bad0f1785c"
     },
     {
       "path": "references/来源依据/方法依据/35_回归模型选择与方法总览.md",
-      "sha256": "4a9afb0e02c1bbce27f952adb35c5df30842e682e8b290a2993670d50deec0fe"
+      "sha256": "97a84d05e2d56c0b06353749e1d343f10f8226d85a9ce6ee02d2137226f0daa6"
     },
     {
       "path": "references/来源依据/方法依据/36_AB题机理建模与仿真方法卡.md",
-      "sha256": "ecde8c9829e1472eeb484ba5ede058100f38b6e7b2432b20c9a04f3639438a60"
+      "sha256": "295ddb02f0e3e683dbd6d7fb344c52202ab25893f99e744bfe8300f626118287"
     },
     {
       "path": "references/来源依据/方法依据/37_文本数据建模方法卡.md",
-      "sha256": "762c8bb729288f03f3d126bde3cac8a2a6dd76b8316dd65b49f52bc93d223c33"
+      "sha256": "07b3f9913cbb625af17286575b56961d3a0a7b80f86009c6485fc6bfeed279c0"
     },
     {
       "path": "references/来源依据/方法依据/38_信号处理与频谱建模方法卡.md",
-      "sha256": "ab7d02ae15c2d6014d2a452ba4191b63b1d719e89d6f96dbf791582bbefd6a0f"
+      "sha256": "bb2608ba7d8c521f582f288f9a209a60c7a0918afa0b4fe22c4aa0c3cabe368e"
     },
     {
       "path": "references/来源依据/方法依据/39_图像数据建模方法卡.md",
-      "sha256": "9520a16641f0853b77c71d02179577c9619acb3652e31e8a3d1ce861aa6f6c97"
+      "sha256": "830a781eed408b7b2da885a3525fff7c73403cb97558dd4a60158ab88ebbf733"
+    },
+    {
+      "path": "references/来源依据/方法依据/README.md",
+      "sha256": "a5bced79fa7c3cd518b5f442796e00d7eafb166059c92ac97ac1b7fb0bbcc329"
     },
     {
       "path": "references/来源依据/方法依据/索引.md",
@@ -106,7 +126,7 @@
     },
     {
       "path": "references/来源依据/来源索引.md",
-      "sha256": "e3c93e43228e14c38a04485f440e53b6e32347af666fa6bb6344162d8fbba2c1"
+      "sha256": "a9cc87a209a584f6243a77acd9892779ef1c86f8b7ea5acef1db95c620b9269a"
     },
     {
       "path": "references/来源依据/构建信息.json",
@@ -121,28 +141,36 @@
       "sha256": "df34a645aea7b7c4cfefda1dc83a9ff683ffdf1c52657a8372e003723756eedd"
     },
     {
+      "path": "references/案例反例/README.md",
+      "sha256": "7f43b22c158c6383e898ec21e4403f18c7433f5a7918dd42b01b731da5c89b53"
+    },
+    {
       "path": "references/案例反例/常见错误与复盘索引.md",
       "sha256": "b2e960daa9c84b7951a1db04f2ad9e18de1a168c27b21e2f81320c5985c2f54a"
     },
     {
       "path": "references/模型审查/11_验证敏感性与不确定性.md",
-      "sha256": "dd9ffb79699e2d1fe237b740a9329e7884494d645953949f311ff7595c1bf697"
+      "sha256": "02b10e601a4e287ed8c092504db2fa0301d5b29b4f137ca636286da2ed6a81f9"
     },
     {
       "path": "references/模型审查/14_公式与指标速查.md",
-      "sha256": "248f87fd76d5b03c42ab3d1cfe4514c894425d547a686b9123f4d2769584ed21"
+      "sha256": "2d19e0be82e04f925679f90eb313459943a8ba290a64c5ee2012e690b6b687f5"
     },
     {
       "path": "references/模型审查/15_代码与实验规范.md",
-      "sha256": "1635231862fb32b7aa3cc73b93ce1751235f0c60772225bf1560cf996b10e331"
+      "sha256": "218a58d81434baeafc179af4536de70c94a3007d3e8cd0dc6df9b9c81d7af4ce"
     },
     {
       "path": "references/模型审查/24_机器学习评审标准.md",
-      "sha256": "8593ccd17a3e783fa972ca20dec866b1e9706a9c5e9eaed94b2939d74632e5d3"
+      "sha256": "b31d10f92cf1ff72a2f0507dc7d702c67ca56d732797e91c5a84435760455df0"
     },
     {
       "path": "references/模型审查/40_敏感性分析与稳定性诊断方法卡.md",
-      "sha256": "13edb4ffa4146469f0b27b3525c7e419961f24508d22493f882bf944e06ccb7e"
+      "sha256": "bfe3d18eec93477f8bc236f983e61c83796aa8fca23173b2739e1da6fcf453ed"
+    },
+    {
+      "path": "references/模型审查/README.md",
+      "sha256": "3eb2090b71ca607bea9a76b6e696c511085ad28b21555937f4aee6a517643468"
     },
     {
       "path": "references/模型审查/分模型检查要点.md",
@@ -150,11 +178,15 @@
     },
     {
       "path": "references/论文与交付/12_论文写作与可视化.md",
-      "sha256": "9b2875c2fc78fd9dd54c8e8d23192c86019b44c30afe610b322b28669ff6a223"
+      "sha256": "d4321a28aa0faf09eba087d2527b06678ab5abf701bfc09e20806f5c90a5ab4c"
     },
     {
       "path": "references/论文与交付/13_竞赛工作流与检查清单.md",
-      "sha256": "4b227ecedcb50f8a56771f0aa1477baeaddbdcbeb72c6c0c0a96e99214b7b83d"
+      "sha256": "a964f9036d053db1b945c8917928ab453302faba0f46899ca3af12e39d12d7b0"
+    },
+    {
+      "path": "references/论文与交付/README.md",
+      "sha256": "30c0de9835395e334447c5b29a27332306999cda4d23d23e61bf9f648903d078"
     },
     {
       "path": "references/论文与交付/交付审计.md",
@@ -171,6 +203,10 @@
     {
       "path": "references/论文图表/00_模型与图表总表.md",
       "sha256": "58c45749bffe72b81c0687c82d55f2948da6d979afdd8d746e017056dd77c8f9"
+    },
+    {
+      "path": "references/论文图表/README.md",
+      "sha256": "37059d7889d0e0244a62ad9a7cef605896619a64a176adb70e933ea1a9dd2a7f"
     },
     {
       "path": "references/论文图表/分类与机器学习.md",
@@ -217,6 +253,10 @@
       "sha256": "daa9ff15c7740ae873f3836aab42e270826c51fbae73f42d5114fb8e3c1bf4a2"
     },
     {
+      "path": "references/通用规范/README.md",
+      "sha256": "d197dc80f54332ffe62a3b0fa550129a0ece9d56417406e9066cf41e519a473a"
+    },
+    {
       "path": "scripts/audit_contract.py",
       "sha256": "7b3759449b9997f6e384110b98746d8e53e4edf4fc55d3d4fe7fe01ec98a680b"
     },
@@ -241,40 +281,64 @@
       "sha256": "f0f7a0ab9e371bbd9821624ac3c24bd8feabaafbddb8a158daea2adaef542a14"
     },
     {
-      "path": "SKILL.md",
-      "sha256": "0fff88d3f47d1dcfde8cbd0819ac5ab1360b53937b38a7f3ee08c97f7eabdb1d"
-    },
-    {
-      "path": "前沿算法/README.md",
-      "sha256": "5c27b01ebf35c448ab62ee89e0f152e691a5aafba00220297111e45afd302112"
+      "path": "前沿算法/IceNODE_动力学与符号解释.md",
+      "sha256": "a99c791119dc494cf7be2cfd81d50eea64924e23a373b9c2a92320f2ecad7775"
     },
     {
       "path": "前沿算法/MFTabPFN_多保真回归.md",
-      "sha256": "337b60101171b72ca124b0377336dd9be738a4e3729201e40636bea9bdec09e3"
+      "sha256": "bfe7595cd7c66c5c3bf615a9703c579e6e89a63ad4c9def4067c7a0426f7b25d"
+    },
+    {
+      "path": "前沿算法/README.md",
+      "sha256": "21b95c9043682bf5531ea73137727c48ac0f0dbea3b50f3fa72ea9e89aba8aba"
     },
     {
       "path": "前沿算法/RankReg_排序与回归.md",
-      "sha256": "372681afea6f5d9c2a48d069efda449f6874f1f318c7c576797ed64c697661e7"
-    },
-    {
-      "path": "前沿算法/近期论文追踪.md",
-      "sha256": "7cb03417ffcc9eb690f67a196fdb230ca384c434df09cca52878bbbc127a0d86"
+      "sha256": "0533651e9e2bb1cf831236db995e6cbd1c4fdf6ec057aea749639c4435c0161a"
     },
     {
       "path": "前沿算法/catalog.json",
-      "sha256": "76a932a26bd1c43941bed6c93cdeca4b7f5aefdd09044cf816032b06b876f51e"
+      "sha256": "6cd243f6546c33a0e90c5146f62b08d227434d60ff6fd3a83a5ebde20ef448a1"
     },
     {
       "path": "前沿算法/评价目标反例/README.md",
-      "sha256": "a1a8f8d8501d9cb2022a6ae97ef623edbac38251cf597d1b697391e54fc3396e"
+      "sha256": "630d5e783dfe417b7c4ea434b896c860768f5bda7de1b1dc91b8464e543ba071"
+    },
+    {
+      "path": "前沿算法/评价目标反例/figure-manifest.json",
+      "sha256": "7519358c417a0fdca2e06501a628f43b44da1888974caf39dd6c1056fdd7483f"
+    },
+    {
+      "path": "前沿算法/评价目标反例/metric-tradeoff-gray.png",
+      "sha256": "c5715b12d0237a1aa8998f10c3614f902d3dcdd5f516e2b79a35518aeb37602a"
+    },
+    {
+      "path": "前沿算法/评价目标反例/metric-tradeoff.pdf",
+      "sha256": "274c04bfecf67af4d7a136862805824c7a3750be073768dbaeedbe9c7e0aa4cd"
+    },
+    {
+      "path": "前沿算法/评价目标反例/metric-tradeoff.png",
+      "sha256": "ee32974e3a137cf1a7f2bc5559af4913e0e4d9f3f6789f87765775f51705921b"
+    },
+    {
+      "path": "前沿算法/评价目标反例/metric-tradeoff.svg",
+      "sha256": "012751011f2560da93c5dc539f32ce86433e9cd97f14236ca17a56f70d78051c"
+    },
+    {
+      "path": "前沿算法/评价目标反例/plot_tradeoff.py",
+      "sha256": "580d119504409aefd636daff26058e2d51eb5cdb1aeeeb8a47084f930a8ed003"
+    },
+    {
+      "path": "前沿算法/评价目标反例/results.json",
+      "sha256": "6d0e38a5434bad0ae0eca06de20289dfdf28e08fb79593110c24adc3086c8d96"
     },
     {
       "path": "前沿算法/评价目标反例/run_tradeoff.py",
       "sha256": "24e34e10cf29da07528d80911b5da046f9437f96f88394dda09b2a67f8a1f3f4"
     },
     {
-      "path": "前沿算法/评价目标反例/results.json",
-      "sha256": "6d0e38a5434bad0ae0eca06de20289dfdf28e08fb79593110c24adc3086c8d96"
+      "path": "前沿算法/近期论文追踪.md",
+      "sha256": "f8c9b64bebc9e69baf594301e4139cef2c3e0f056ad22471bd46c5bd78df8ae3"
     }
   ],
   "sync": {

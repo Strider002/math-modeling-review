@@ -1,0 +1,30 @@
+{
+  "kind": "original_synthetic_figure",
+  "input_sha256": "6d0e38a5434bad0ae0eca06de20289dfdf28e08fb79593110c24adc3086c8d96",
+  "plot_script_sha256": "580d119504409aefd636daff26058e2d51eb5cdb1aeeeb8a47084f930a8ed003",
+  "evaluation_script_sha256": "24e34e10cf29da07528d80911b5da046f9437f96f88394dda09b2a67f8a1f3f4",
+  "python": "3.12.7",
+  "matplotlib": "3.9.2",
+  "pillow": "10.4.0",
+  "width_mm": 180,
+  "height_mm": 108,
+  "png_pixels": [
+    2125,
+    1275
+  ],
+  "dpi": 300,
+  "minimum_font_pt": 9,
+  "text_outside_canvas": [],
+  "transformations": [
+    "exact rational scores verified from all input vectors",
+    "fractions converted to float only for plotting",
+    "horizontal category offsets; no smoothing, exclusions or uncertainty intervals",
+    "whole-image luminance conversion for grayscale preview"
+  ],
+  "files": {
+    "metric-tradeoff.svg": "012751011f2560da93c5dc539f32ce86433e9cd97f14236ca17a56f70d78051c",
+    "metric-tradeoff.pdf": "274c04bfecf67af4d7a136862805824c7a3750be073768dbaeedbe9c7e0aa4cd",
+    "metric-tradeoff.png": "ee32974e3a137cf1a7f2bc5559af4913e0e4d9f3f6789f87765775f51705921b",
+    "metric-tradeoff-gray.png": "c5715b12d0237a1aa8998f10c3614f902d3dcdd5f516e2b79a35518aeb37602a"
+  }
+}

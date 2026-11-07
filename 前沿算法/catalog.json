@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "reviewed_at": "2026-10-29",
+  "reviewed_at": "2026-10-31",
   "entries": [
     {
       "repository": "Rockou/MFTabPFN",
@@ -116,6 +116,39 @@
       },
       "verified_at": "2026-10-29",
       "review_due": "2026-11-29"
+    },
+    {
+      "repository": "kdlamb/IceNODE",
+      "doi": "10.1126/sciadv.aee6174",
+      "published_date": "2026-09-25",
+      "card": "IceNODE_动力学与符号解释.md",
+      "commit": "63078e02bdd54061040e0ea3a050d4fbed84832e",
+      "license": null,
+      "license_status": "待核验",
+      "reviewed_files": [
+        {
+          "path": "README.md",
+          "sha256": "0bd1c93447f4c0d4a48d7d8ef97b801c3a5ac83d9d21b8eaccfcc49d14e596c7"
+        },
+        {
+          "path": "models.py",
+          "sha256": "f7b2485553c9422c95996d5a5e68c548ec36c72174d2528b8dd1a031e40981d0"
+        },
+        {
+          "path": "main.py",
+          "sha256": "d96f052f7941c44063e53e5abcfe3a02835183449feeba742beb04bfe47f9b85"
+        }
+      ],
+      "status": "案例线索",
+      "runtime_reproduction": "未执行",
+      "formal_paper_code_match": "待核验",
+      "cas_partition": {
+        "status": "待核验",
+        "year": null,
+        "category_scope": null
+      },
+      "verified_at": "2026-10-31",
+      "review_due": "2026-11-30"
     }
   ]
 }
